@@ -23,9 +23,9 @@ abstract public class Ball {
     private final Color inner;
 
     private int speedX;
-    private int speedY;
+    private int speedY = 0;
 
-    public Ball(Point2D center,int radiusA,int radiusB,Color inner,Color border){
+    public Ball(Point2D center,float radiusA,float radiusB,Color inner,Color border){
         this.center = center;
 
         up = new Point2D.Double();
@@ -36,17 +36,16 @@ abstract public class Ball {
         up.setLocation(center.getX(),center.getY()-(radiusB / 2));
         down.setLocation(center.getX(),center.getY()+(radiusB / 2));
 
-        left.setLocation(center.getX()-(radiusA /2),center.getY());
-        right.setLocation(center.getX()+(radiusA /2),center.getY());
+        left.setLocation(center.getX()-(radiusA / 2),center.getY());
+        right.setLocation(center.getX()+(radiusA / 2),center.getY());
 
         ballFace = makeBall(center,radiusA,radiusB);
         this.border = border;
         this.inner  = inner;
         speedX = 0;
-        speedY = 0;
     }
 
-    protected abstract Shape makeBall(Point2D center,int radiusA,int radiusB);
+    protected abstract Shape makeBall(Point2D center,float radiusA,float radiusB);
 
     public void move(){
         RectangularShape tmp = (RectangularShape) ballFace;
