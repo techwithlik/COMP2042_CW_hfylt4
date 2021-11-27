@@ -12,15 +12,15 @@ abstract public class Ball {
 
     private Shape ballFace;
 
-    private Point2D center;
+    private final Point2D center;
 
     Point2D up;
     Point2D down;
     Point2D left;
     Point2D right;
 
-    private Color border;
-    private Color inner;
+    private final Color border;
+    private final Color inner;
 
     private int speedX;
     private int speedY;

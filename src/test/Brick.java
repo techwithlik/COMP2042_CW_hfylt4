@@ -38,10 +38,10 @@ abstract public class Brick  {
 
 
 
-        private GeneralPath crack;
+        private final GeneralPath crack;
 
-        private int crackDepth;
-        private int steps;
+        private final int crackDepth;
+        private final int steps;
 
 
         public Crack(int crackDepth, int steps){
@@ -176,13 +176,13 @@ abstract public class Brick  {
 
     private static Random rnd;
 
-    private String name;
+    private final String name;
     Shape brickFace;
 
-    private Color border;
-    private Color inner;
+    private final Color border;
+    private final Color inner;
 
-    private int fullStrength;
+    private final int fullStrength;
     private int strength;
 
     private boolean broken;
@@ -210,8 +210,6 @@ abstract public class Brick  {
 
     public abstract Shape getBrick();
 
-
-
     public Color getBorderColor(){
         return  border;
     }
@@ -219,7 +217,6 @@ abstract public class Brick  {
     public Color getInnerColor(){
         return inner;
     }
-
 
     public final int findImpact(Ball b){
         if(broken)
@@ -249,9 +246,6 @@ abstract public class Brick  {
         strength--;
         broken = (strength == 0);
     }
-
-
-
 }
 
 

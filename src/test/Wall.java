@@ -30,17 +30,17 @@ public class Wall {
     private static final int STEEL = 2;
     private static final int CEMENT = 3;
 
-    private Random rnd;
-    private Rectangle area;
+    private final Random rnd;
+    private final Rectangle area;
 
     Brick[] bricks;
     Ball ball;
     Player player;
 
-    private Brick[][] levels;
+    private final Brick[][] levels;
     private int level;
 
-    private Point startPoint;
+    private final Point startPoint;
     private int brickCount;
     private int ballCount;
     private boolean ballLost;

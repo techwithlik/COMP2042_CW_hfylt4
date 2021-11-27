@@ -2,7 +2,6 @@ package test;
 
 import java.awt.*;
 import java.awt.Point;
-import java.awt.geom.Point2D;
 
 
 /**
@@ -15,10 +14,6 @@ public class ClayBrick extends Brick {
     private static final Color DEF_INNER = new Color(178, 34, 34).darker();
     private static final Color DEF_BORDER = Color.GRAY;
     private static final int CLAY_STRENGTH = 1;
-
-
-
-
 
 
     public ClayBrick(Point point, Dimension size){
@@ -34,6 +29,5 @@ public class ClayBrick extends Brick {
     public Shape getBrick() {
         return super.brickFace;
     }
-
 
 }
