@@ -23,11 +23,9 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 
-
 public class DebugPanel extends JPanel {
 
     private static final Color DEF_BKG = Color.WHITE;
-
 
     private final JButton skipLevel;
     private final JButton resetBalls;
@@ -81,5 +79,4 @@ public class DebugPanel extends JPanel {
         ballXSpeed.setValue(x);
         ballYSpeed.setValue(y);
     }
-
 }

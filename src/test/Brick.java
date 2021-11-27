@@ -16,12 +16,10 @@ abstract public class Brick  {
     public static final int DEF_CRACK_DEPTH = 1;
     public static final int DEF_STEPS = 35;
 
-
     public static final int UP_IMPACT = 100;
     public static final int DOWN_IMPACT = 200;
     public static final int LEFT_IMPACT = 300;
     public static final int RIGHT_IMPACT = 400;
-
 
 
     public class Crack{
@@ -36,8 +34,6 @@ abstract public class Brick  {
         public static final int VERTICAL = 100;
         public static final int HORIZONTAL = 200;
 
-
-
         private final GeneralPath crack;
 
         private final int crackDepth;
@@ -51,7 +47,6 @@ abstract public class Brick  {
             this.steps = steps;
 
         }
-
 
 
         public GeneralPath draw(){
@@ -84,7 +79,6 @@ abstract public class Brick  {
                     end.setLocation(bounds.x, bounds.y + bounds.height);
                     tmp = makeRandomPoint(start,end,VERTICAL);
                     makeCrack(impact,tmp);
-
                     break;
                 case UP:
                     start.setLocation(bounds.x, bounds.y + bounds.height);
@@ -97,7 +91,6 @@ abstract public class Brick  {
                     end.setLocation(bounds.x + bounds.width, bounds.y);
                     tmp = makeRandomPoint(start,end,HORIZONTAL);
                     makeCrack(impact,tmp);
-
                     break;
 
             }
@@ -106,7 +99,6 @@ abstract public class Brick  {
         protected void makeCrack(Point start, Point end){
 
             GeneralPath path = new GeneralPath();
-
 
             path.moveTo(start.x,start.y);
 
@@ -126,6 +118,9 @@ abstract public class Brick  {
                 if(inMiddle(i,CRACK_SECTIONS,steps))
                     y += jumps(jump,JUMP_PROBABILITY);
 
+                /* Adds a point to the path by drawing a straight line from the current coordinates
+                to the new specified coordinates specified in double precision
+                 */
                 path.lineTo(x,y);
 
             }
@@ -151,7 +146,6 @@ abstract public class Brick  {
             if(rnd.nextDouble() > probability)
                 return randomInBounds(bound);
             return  0;
-
         }
 
         private Point makeRandomPoint(Point from,Point to, int direction){
@@ -196,7 +190,6 @@ abstract public class Brick  {
         this.border = border;
         this.inner = inner;
         this.fullStrength = this.strength = strength;
-
     }
 
     protected abstract Shape makeBrickFace(Point pos,Dimension size);
@@ -205,13 +198,13 @@ abstract public class Brick  {
         if(broken)
             return false;
         impact();
-        return  broken;
+        return broken;
     }
 
     public abstract Shape getBrick();
 
     public Color getBorderColor(){
-        return  border;
+        return border;
     }
 
     public Color getInnerColor(){

@@ -72,7 +72,6 @@ public class Wall {
 
         area = drawArea;
 
-
     }
 
     private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int type){
