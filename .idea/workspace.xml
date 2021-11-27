@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Did proper indentation">
-      <change beforePath="$PROJECT_DIR$/src/test/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameBoard.java" afterDir="false" />
-    </list>
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Typecasting of variables" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638028305066</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Typecasting of variables">
+      <created>1638029486313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638029486313</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +91,7 @@
     <MESSAGE value="Edited variables to 'final' and did proper indentation. Modified README." />
     <MESSAGE value="Edited variables to 'final', did proper indentation, and removed unused libraries. Modified README." />
     <MESSAGE value="Did proper indentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Did proper indentation" />
+    <MESSAGE value="Typecasting of variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Typecasting of variables" />
   </component>
 </project>
