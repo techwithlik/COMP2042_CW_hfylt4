@@ -43,26 +43,25 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     private static final int BORDER_SIZE = 5;
     private static final float[] DASHES = {12,6};
 
-    private Rectangle menuFace;
-    private Rectangle startButton;
-    private Rectangle menuButton;
+    private final Rectangle menuFace;
+    private final Rectangle startButton;
+    private final Rectangle menuButton;
 
+    private final BasicStroke borderStoke;
+    private final BasicStroke borderStoke_noDashes;
 
-    private BasicStroke borderStoke;
-    private BasicStroke borderStoke_noDashes;
+    private final Font greetingsFont;
+    private final Font gameTitleFont;
+    private final Font creditsFont;
+    private final Font buttonFont;
 
-    private Font greetingsFont;
-    private Font gameTitleFont;
-    private Font creditsFont;
-    private Font buttonFont;
-
-    private GameFrame owner;
+    private final GameFrame owner;
 
     private boolean startClicked;
     private boolean menuClicked;
 
 
-    public HomeMenu(GameFrame owner,Dimension area){
+    public HomeMenu(GameFrame owner, Dimension area){
 
         this.setFocusable(true);
         this.requestFocusInWindow();
@@ -71,7 +70,6 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         this.addMouseMotionListener(this);
 
         this.owner = owner;
-
 
 
         menuFace = new Rectangle(new Point(0,0),area);
@@ -88,9 +86,6 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         gameTitleFont = new Font("Noto Mono",Font.BOLD,40);
         creditsFont = new Font("Monospaced",Font.PLAIN,10);
         buttonFont = new Font("Monospaced",Font.PLAIN,startButton.height-2);
-
-
-
     }
 
 
