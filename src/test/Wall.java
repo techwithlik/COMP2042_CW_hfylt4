@@ -74,7 +74,7 @@ public class Wall {
 
     }
 
-    private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int type){
+    private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio){
         /*
           if brickCount is not divisible by line count,brickCount is adjusted to the biggest
           multiple of lineCount smaller then brickCount
@@ -102,7 +102,7 @@ public class Wall {
             x =(line % 2 == 0) ? x : (x - (brickLen / 2));
             double y = (line) * brickHgt;
             p.setLocation(x,y);
-            tmp[i] = makeBrick(p,brickSize,type);
+            tmp[i] = makeBrick(p,brickSize,Wall.CLAY);
         }
 
         for(double y = brickHgt;i < tmp.length;i++, y += 2*brickHgt){
@@ -165,7 +165,7 @@ public class Wall {
 
     private Brick[][] makeLevels(Rectangle drawArea,int brickCount,int lineCount,double brickDimensionRatio){
         Brick[][] tmp = new Brick[LEVELS_COUNT][];
-        tmp[0] = makeSingleTypeLevel(drawArea,brickCount,lineCount,brickDimensionRatio,CLAY);
+        tmp[0] = makeSingleTypeLevel(drawArea,brickCount,lineCount,brickDimensionRatio);
         tmp[1] = makeChessboardLevel(drawArea,brickCount,lineCount,brickDimensionRatio,CLAY,CEMENT);
         tmp[2] = makeChessboardLevel(drawArea,brickCount,lineCount,brickDimensionRatio,CLAY,STEEL);
         tmp[3] = makeChessboardLevel(drawArea,brickCount,lineCount,brickDimensionRatio,STEEL,CEMENT);
@@ -203,20 +203,24 @@ public class Wall {
         for(Brick b : bricks){
             switch(b.findImpact(ball)) {
                 //Vertical Impact
-                case Brick.UP_IMPACT:
+                case Brick.UP_IMPACT -> {
                     ball.reverseY();
                     return b.setImpact(ball.down, Brick.Crack.UP);
-                case Brick.DOWN_IMPACT:
+                }
+                case Brick.DOWN_IMPACT -> {
                     ball.reverseY();
                     return b.setImpact(ball.up,Brick.Crack.DOWN);
+                }
 
                 //Horizontal Impact
-                case Brick.LEFT_IMPACT:
+                case Brick.LEFT_IMPACT -> {
                     ball.reverseX();
-                    return b.setImpact(ball.right,Brick.Crack.RIGHT);
-                case Brick.RIGHT_IMPACT:
+                    return b.setImpact(ball.right, Brick.Crack.RIGHT);
+                }
+                case Brick.RIGHT_IMPACT -> {
                     ball.reverseX();
                     return b.setImpact(ball.left,Brick.Crack.LEFT);
+                }
             }
         }
         return false;
@@ -291,21 +295,12 @@ public class Wall {
     }
 
     private Brick makeBrick(Point point, Dimension size, int type){
-        Brick out;
-        switch(type){
-            case CLAY:
-                out = new ClayBrick(point,size);
-                break;
-            case STEEL:
-                out = new SteelBrick(point,size);
-                break;
-            case CEMENT:
-                out = new CementBrick(point, size);
-                break;
-            default:
-                throw  new IllegalArgumentException(String.format("Unknown Type:%d\n",type));
-        }
-        return  out;
+        return switch (type) {
+            case CLAY -> new ClayBrick(point, size);
+            case STEEL -> new SteelBrick(point, size);
+            case CEMENT -> new CementBrick(point, size);
+            default -> throw new IllegalArgumentException(String.format("Unknown Type:%d\n", type));
+        };
     }
 
 }
