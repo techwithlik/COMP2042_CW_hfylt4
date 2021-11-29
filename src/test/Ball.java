@@ -23,7 +23,7 @@ abstract public class Ball {
     private final Color inner;
 
     private int speedX;
-    private int speedY = 0;
+    private int speedY;
 
     public Ball(Point2D center,float radiusA,float radiusB,Color inner,Color border){
         this.center = center;
@@ -43,6 +43,7 @@ abstract public class Ball {
         this.border = border;
         this.inner  = inner;
         speedX = 0;
+        speedY = 0;
     }
 
     protected abstract Shape makeBall(Point2D center,float radiusA,float radiusB);
