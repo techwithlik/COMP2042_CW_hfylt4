@@ -59,11 +59,11 @@ public class DebugPanel extends JPanel {
     private JButton makeButton(String title, ActionListener e){
         JButton out = new JButton(title);
         out.addActionListener(e);
-        return  out;
+        return out;
     }
 
     private JSlider makeSlider(ChangeListener e){
-        JSlider out = new JSlider(-4,4);
+        JSlider out = new JSlider(-4, 4);
         out.setMajorTickSpacing(1);
         out.setSnapToTicks(true);
         out.setPaintTicks(true);
@@ -71,7 +71,7 @@ public class DebugPanel extends JPanel {
         return out;
     }
 
-    public void setValues(int x,int y){
+    public void setValues(int x, int y){
         ballXSpeed.setValue(x);
         ballYSpeed.setValue(y);
     }

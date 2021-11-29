@@ -17,12 +17,12 @@ public class ClayBrick extends Brick {
 
 
     public ClayBrick(Point point, Dimension size){
-        super(NAME,point,size,DEF_BORDER,DEF_INNER,CLAY_STRENGTH);
+        super(NAME, point, size, DEF_BORDER, DEF_INNER, CLAY_STRENGTH);
     }
 
     @Override
     protected Shape makeBrickFace(Point pos, Dimension size) {
-        return new Rectangle(pos,size);
+        return new Rectangle(pos, size);
     }
 
     @Override

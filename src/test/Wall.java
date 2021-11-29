@@ -48,7 +48,7 @@ public class Wall {
         rnd = new Random();
 
         makeBall(ballPos);
-        int speedX,speedY;
+        int speedX, speedY;
         do{
             speedX = rnd.nextInt(5) - 2;
         }while(speedX == 0);
@@ -56,7 +56,7 @@ public class Wall {
             speedY = -rnd.nextInt(3);
         }while(speedY == 0);
 
-        ball.setSpeed(speedX,speedY);
+        ball.setSpeed(speedX, speedY);
 
         player = new Player((Point) ballPos.clone(),150,10, drawArea);
 
@@ -109,17 +109,17 @@ public class Wall {
                 }
                 case Brick.DOWN_IMPACT -> {
                     ball.reverseY();
-                    return b.setImpact(ball.up,Crack.DOWN);
+                    return b.setImpact(ball.up, Crack.DOWN);
                 }
 
                 // Horizontal Impact
                 case Brick.LEFT_IMPACT -> {
                     ball.reverseX();
-                    return b.setImpact(ball.right,Crack.RIGHT);
+                    return b.setImpact(ball.right, Crack.RIGHT);
                 }
                 case Brick.RIGHT_IMPACT -> {
                     ball.reverseX();
-                    return b.setImpact(ball.left,Crack.LEFT);
+                    return b.setImpact(ball.left, Crack.LEFT);
                 }
             }
         }
@@ -148,7 +148,7 @@ public class Wall {
     public void ballReset(){
         player.moveTo(startPoint);
         ball.moveTo(startPoint);
-        int speedX,speedY;
+        int speedX, speedY;
         do{
             speedX = rnd.nextInt(5) - 2;
         }while(speedX == 0);
@@ -156,7 +156,7 @@ public class Wall {
             speedY = -rnd.nextInt(3);
         }while(speedY == 0);
 
-        ball.setSpeed(speedX,speedY);
+        ball.setSpeed(speedX, speedY);
         ballLost = false;
     }
 

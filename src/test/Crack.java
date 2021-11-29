@@ -28,16 +28,13 @@ public class Crack{
 
 
     public Crack(int crackDepth, int steps){
-
         crack = new GeneralPath();
         this.crackDepth = crackDepth;
         this.steps = steps;
-
     }
 
 
     public GeneralPath draw(){
-
         return crack;
     }
 
@@ -48,7 +45,7 @@ public class Crack{
     protected void makeCrack(Point2D point, int direction){
         Rectangle bounds = this.brickFace.getBounds();
 
-        Point impact = new Point((int)point.getX(),(int)point.getY());
+        Point impact = new Point((int)point.getX(), (int)point.getY());
         Point start = new Point();
         Point end = new Point();
 
@@ -79,7 +76,6 @@ public class Crack{
                 tmp = makeRandomPoint(start,end,HORIZONTAL);
                 makeCrack(impact,tmp);
                 break;
-
         }
     }
 
@@ -87,7 +83,7 @@ public class Crack{
 
         GeneralPath path = new GeneralPath();
 
-        path.moveTo(start.x,start.y);
+        path.moveTo(start.x, start.y);
 
         double w = (end.x - start.x) / (double)steps;
         double h = (end.y - start.y) / (double)steps;
@@ -95,7 +91,7 @@ public class Crack{
         int bound = crackDepth;
         int jump  = bound * 5;
 
-        double x,y;
+        double x, y;
 
         for(int i = 1; i < steps;i++){
 
@@ -108,12 +104,12 @@ public class Crack{
                 /* Adds a point to the path by drawing a straight line from the current coordinates
                 to the new specified coordinates specified in double precision
                  */
-            path.lineTo(x,y);
+            path.lineTo(x, y);
 
         }
 
-        path.lineTo(end.x,end.y);
-        crack.append(path,true);
+        path.lineTo(end.x, end.y);
+        crack.append(path, true);
     }
 
     private int randomInBounds(int bound){
@@ -121,7 +117,7 @@ public class Crack{
         return rnd.nextInt(n) - bound;
     }
 
-    private boolean inMiddle(int i,int divisions){
+    private boolean inMiddle(int i, int divisions){
         int low = (steps / divisions);
         int up = low * (divisions - 1);
 
@@ -134,7 +130,7 @@ public class Crack{
         return  0;
     }
 
-    private Point makeRandomPoint(Point from,Point to, int direction){
+    private Point makeRandomPoint(Point from, Point to, int direction){
 
         Point out = new Point();
         int pos;
