@@ -12,11 +12,14 @@ ESC to enter/exit pause menu
 ALT+SHIFT+F1 to open the console
 The game automatically pauses if the frame loses focus.
 
-# Key changes made
-Maintenance:
+# Key changes made for Maintenance:
 Proper Spacing and Indentation,
 Assigned variables to Final,
 Typecasting of Variables,
 Removed disposable parameters, unused fields and imports,
 Enhanced switch cases,
 Break up large classes
+
+# Key Additions:
+Move player left and right using arrow keys
+Changed colors of elements to improve user interface

@@ -70,7 +70,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         level = new Level(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), 30, 3, (float)6/2, new Point(300, 430), wall);
 
         debugConsole = new DebugConsole(owner, wall, this);
-        //initialize the first level
+        // Initialize the first level
         level.nextLevel();
 
         gameTimer = new Timer(10, e ->{
@@ -113,7 +113,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         this.addMouseMotionListener(this);
     }
 
-    // draw level after pressing start
+    // Draw level after pressing start
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
 
@@ -193,7 +193,6 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     }
 
     private void obscureGameBoard(Graphics2D g2d){
-
         Composite tmp = g2d.getComposite();
         Color tmpColor = g2d.getColor();
 
@@ -266,17 +265,23 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     @Override
     public void keyPressed(KeyEvent keyEvent) {
         switch(keyEvent.getKeyCode()){
+            // Moves player to the left if A or Left arrow button was pressed
             case KeyEvent.VK_A:
+            case KeyEvent.VK_LEFT:
                 wall.player.moveLeft();
                 break;
+            // Moves player to the right if D or Right arrow button is pressed
             case KeyEvent.VK_D:
-                wall.player.movRight();
+            case KeyEvent.VK_RIGHT:
+                wall.player.moveRight();
                 break;
+            // Pauses the game and shows pause menu if Escape button is pressed
             case KeyEvent.VK_ESCAPE:
                 showPauseMenu = !showPauseMenu;
                 repaint();
                 gameTimer.stop();
                 break;
+            // Pauses the game if Space button is pressed
             case KeyEvent.VK_SPACE:
                 if(!showPauseMenu)
                     if(gameTimer.isRunning())
