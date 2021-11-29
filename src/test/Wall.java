@@ -31,11 +31,6 @@ public class Wall {
     Ball ball;
     Player player;
 
-    private Brick[][] levels;
-    private final int level;
-
-    private Level Level;
-
     private final Point startPoint;
     private int brickCount;
     private int ballCount;
@@ -45,7 +40,7 @@ public class Wall {
 
         this.startPoint = new Point(ballPos);
 
-        level = 0;
+        int level = 0;
 
         ballCount = 3;
         ballLost = false;
@@ -69,21 +64,24 @@ public class Wall {
 
     }
 
+    // Instantiate ball
     private void makeBall(Point2D ballPos){
         ball = new RubberBall(ballPos);
     }
 
+    // Detects player and ball movements
     public void move(){
         player.move();
         ball.move();
     }
 
+    // Detect ball collision
     public void findImpacts(){
         if(player.impact(ball)){
             ball.reverseY();
         }
         else if(impactWall()){
-            /*for efficiency reverse is done into method impactWall
+            /* for efficiency reverse is done into method impactWall
             * because for every brick program checks for horizontal and vertical impacts
             */
             brickCount--;
@@ -100,6 +98,7 @@ public class Wall {
         }
     }
 
+    // Detect brick collision and impact
     private boolean impactWall(){
         for(Brick b : bricks){
             switch(b.findImpact(ball)) {
@@ -113,7 +112,7 @@ public class Wall {
                     return b.setImpact(ball.up,Crack.DOWN);
                 }
 
-                //Horizontal Impact
+                // Horizontal Impact
                 case Brick.LEFT_IMPACT -> {
                     ball.reverseX();
                     return b.setImpact(ball.right,Crack.RIGHT);
@@ -127,6 +126,7 @@ public class Wall {
         return false;
     }
 
+    // Checks border collision left and right
     private boolean impactBorder(){
         Point2D p = ball.getPosition();
         return ((p.getX() < area.getX()) ||(p.getX() > (area.getX() + area.getWidth())));
@@ -144,6 +144,7 @@ public class Wall {
         return ballLost;
     }
 
+    // Set back players' rectangle and ball to initial position, and speed of x and y
     public void ballReset(){
         player.moveTo(startPoint);
         ball.moveTo(startPoint);
@@ -159,6 +160,7 @@ public class Wall {
         ballLost = false;
     }
 
+    // Reset wall positions, and ball count to 3
     public void wallReset(){
         for(Brick b : bricks)
             b.repair();
@@ -166,10 +168,12 @@ public class Wall {
         ballCount = 3;
     }
 
+    // Ball count will be 0 when there are no balls left
     public boolean ballEnd(){
         return ballCount == 0;
     }
 
+    // Brick number will be set to 0 when level is done
     public boolean isDone(){
         return brickCount == 0;
     }

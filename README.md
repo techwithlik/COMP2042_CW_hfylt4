@@ -1,7 +1,7 @@
 # COMP2042_CW_hfylt4
 This is my coursework for the COMP2042 Software Maintenance module (2021).
 
-# Brick_Destroy
+# Brick_Destroy Description
 This is a simple arcade video game.
 The player's goal is to destroy a wall with a small ball.
 The game has very simple commands:
@@ -19,4 +19,4 @@ Assigned variables to Final,
 Typecasting of Variables,
 Removed disposable parameters, unused fields and imports,
 Enhanced switch cases,
-Break up big classes
+Break up large classes

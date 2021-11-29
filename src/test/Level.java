@@ -9,17 +9,16 @@ public class Level {
     private static final int STEEL = 2;
     private static final int CEMENT = 3;
 
-    private Brick[][] levels;
-    private Wall wall;
+    private final Brick[][] levels;
+    private final Wall wall;
     private int level;
-    private int brickCount;
 
-    public Level(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio, Point ballPos, Wall wall) {
+    public Level(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio, Point point, Wall wall) {
         levels = makeLevels(drawArea, brickCount, lineCount, brickDimensionRatio);
         this.wall = wall;
-        this.brickCount = brickCount;
     }
 
+    // Generate Level 1 brick only
     private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int type) {
         /*
           if brickCount is not divisible by line count,brickCount is adjusted to the biggest
@@ -60,6 +59,7 @@ public class Level {
 
     }
 
+    // Generate Level 2,3,4
     private Brick[] makeChessboardLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int typeA, int typeB) {
         /*
           if brickCount is not divisible by line count,brickCount is adjusted to the biggest
@@ -105,6 +105,7 @@ public class Level {
         return tmp;
     }
 
+    // Call levels after generation
     public Brick[][] makeLevels(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio) {
         Brick[][] tmp = new Brick[LEVELS_COUNT][];
         tmp[0] = makeSingleTypeLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY);
@@ -114,11 +115,13 @@ public class Level {
         return tmp;
     }
 
+    // Increase level
     public void nextLevel() {
         wall.setBricks(levels[level++]);
         wall.setBrickCount(wall.getBricks().length);
     }
 
+    // Check if the last level has been reached
     public boolean hasLevel() {
         return level < levels.length;
     }

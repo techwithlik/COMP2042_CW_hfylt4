@@ -40,7 +40,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
     private Timer gameTimer;
 
     private final Wall wall;
-    private Level level;
+    private final Level level;
 
     private String message;
 
@@ -67,7 +67,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         this.initialize();
         message = "";
         wall = new Wall(new Rectangle(0,0,DEF_WIDTH,DEF_HEIGHT),30,3,(float)6/2,new Point(300,430));
-        level = new Level(new Rectangle(0,0,DEF_WIDTH,DEF_HEIGHT),30,3,6/2,new Point(300,430),wall);
+        level = new Level(new Rectangle(0,0,DEF_WIDTH,DEF_HEIGHT),30,3,(float)6/2,new Point(300,430),wall);
 
         debugConsole = new DebugConsole(owner,wall,this);
         //initialize the first level
@@ -103,7 +103,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         });
     }
 
-
+    // Set up screen and listens for keyboard and mouse input
     private void initialize(){
         this.setPreferredSize(new Dimension(DEF_WIDTH,DEF_HEIGHT));
         this.setFocusable(true);
@@ -113,9 +113,8 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         this.addMouseMotionListener(this);
     }
 
-
+    // draw level after pressing start
     public void paint(Graphics g){
-
         Graphics2D g2d = (Graphics2D) g;
 
         clear(g2d);
@@ -137,6 +136,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         Toolkit.getDefaultToolkit().sync();
     }
 
+    // Clear the stage
     private void clear(Graphics2D g2d){
         Color tmp = g2d.getColor();
         g2d.setColor(BG_COLOR);
@@ -144,6 +144,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         g2d.setColor(tmp);
     }
 
+    // Set color of the border and inside of the bricks
     private void drawBrick(Brick brick,Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -156,6 +157,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         g2d.setColor(tmp);
     }
 
+    // Set color of ball
     private void drawBall(Ball ball,Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -170,6 +172,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         g2d.setColor(tmp);
     }
 
+    // Set color of player's character
     private void drawPlayer(Player p,Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -183,6 +186,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         g2d.setColor(tmp);
     }
 
+    // Draw pause menu
     private void drawMenu(Graphics2D g2d){
         obscureGameBoard(g2d);
         drawPauseMenu(g2d);
@@ -203,6 +207,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         g2d.setColor(tmpColor);
     }
 
+    // Draw pause menu, and set up buttons
     private void drawPauseMenu(Graphics2D g2d){
         Font tmpFont = g2d.getFont();
         Color tmpColor = g2d.getColor();
@@ -257,6 +262,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
     public void keyTyped(KeyEvent keyEvent) {
     }
 
+    // Detect key pressed
     @Override
     public void keyPressed(KeyEvent keyEvent) {
         switch(keyEvent.getKeyCode()){
@@ -291,6 +297,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         wall.player.stop();
     }
 
+    // Checks if mouse is clicked
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
         Point p = mouseEvent.getPoint();
@@ -338,6 +345,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
 
     }
 
+    // Checks if mouse is moved
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
         Point p = mouseEvent.getPoint();
@@ -352,6 +360,7 @@ public class GameBoard extends JComponent implements KeyListener,MouseListener,M
         }
     }
 
+    // Pause game timer when paused or interrupted
     public void onLostFocus(){
         gameTimer.stop();
         message = "Focus Lost";

@@ -5,9 +5,9 @@ import java.awt.geom.Point2D;
 import java.awt.geom.RectangularShape;
 
 /**
- * Created by filippo on 04/09/16.
- *
+ * Created by filippo on 04/09/16
  */
+
 abstract public class Ball {
 
     private Shape ballFace;
@@ -26,8 +26,10 @@ abstract public class Ball {
     private int speedY;
 
     public Ball(Point2D center,float radiusA,float radiusB,Color inner,Color border){
+        // Define location
         this.center = center;
 
+        // Define points
         up = new Point2D.Double();
         down = new Point2D.Double();
         left = new Point2D.Double();
@@ -42,10 +44,12 @@ abstract public class Ball {
         ballFace = makeBall(center,radiusA,radiusB);
         this.border = border;
         this.inner  = inner;
+        // Initialise speed
         speedX = 0;
         speedY = 0;
     }
 
+    // Abstract method for making the ball
     protected abstract Shape makeBall(Point2D center,float radiusA,float radiusB);
 
     public void move(){

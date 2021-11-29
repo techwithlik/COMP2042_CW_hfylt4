@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added documentation of work done in README">
-      <change afterPath="$PROJECT_DIR$/src/test/Level.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Separated Level from Wall class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Brick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Wall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638165200229</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Separated Level from Wall class.">
+      <created>1638170165195</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638170165195</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +167,7 @@
     <MESSAGE value="Removed disposable parameters and unused fields" />
     <MESSAGE value="Separated Crack from Brick class. Edited README" />
     <MESSAGE value="Added documentation of work done in README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation of work done in README" />
+    <MESSAGE value="Separated Level from Wall class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated Level from Wall class." />
   </component>
 </project>
