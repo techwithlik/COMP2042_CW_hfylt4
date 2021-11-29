@@ -5,6 +5,7 @@ import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.util.Random;
 
+
 public class Crack{
 
     private static final int CRACK_SECTIONS = 3;

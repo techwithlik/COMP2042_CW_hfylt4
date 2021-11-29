@@ -9,7 +9,7 @@ public class CementBrick extends Brick {
 
     private static final String NAME = "Cement Brick";
     private static final Color DEF_INNER = new Color(147, 147, 147);
-    private static final Color DEF_BORDER = new Color(217, 199, 175);
+    private static final Color DEF_BORDER = new Color(95, 95, 95); // Dark Grey
     private static final int CEMENT_STRENGTH = 2;
 
     private final Crack crack;
