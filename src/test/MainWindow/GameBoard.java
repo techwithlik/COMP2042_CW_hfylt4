@@ -36,13 +36,13 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final String RESTART = "Restart";
     private static final String EXIT = "Exit";
     private static final String PAUSE = "Pause Menu";
-    private static final int TEXT_SIZE = 30;
-    private static final Color MENU_COLOR = new Color(175, 228, 250); // Light blue
+    private static final int TEXT_SIZE = 35;
+    private static final Color MENU_COLOR = new Color(200, 238, 252); // Light blue
 
     private static final int DEF_WIDTH = 600; // Frame width
     private static final int DEF_HEIGHT = 450; // Frame height
 
-    private static final Color BG_COLOR = Color.WHITE;
+    private static final Color BG_COLOR = new Color(200, 238, 252); // Light blue
 
     private Timer gameTimer;
 
@@ -58,6 +58,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private Rectangle continueButtonRect;
     private Rectangle exitButtonRect;
     private Rectangle restartButtonRect;
+    // private Rectangle scoreBoard;
     private int strLen;
 
     private final DebugConsole debugConsole;
@@ -84,11 +85,13 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         gameTimer = new Timer(10, e ->{
             wall.move();
             wall.findImpacts();
-            message = String.format("Bricks: %d Balls %d", wall.getBrickCount(), wall.getBallCount());
+            message = String.format("Bricks: %d Balls %d Score: %d", wall.getBrickCount(), wall.getBallCount(), wall.getPlayerScore());
+
             if(wall.isBallLost()){
                 if(wall.ballEnd()){
                     wall.wallReset();
-                    message = "Game over";
+                    message = String.format("Game Over \n Player Score: %d", wall.getPlayerScore());
+                    wall.setPlayerScore(0);
                 }
                 wall.ballReset();
                 gameTimer.stop();
@@ -328,6 +331,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         else if(restartButtonRect.contains(p)){
             message = "Restarting Game...";
             wall.ballReset();
+            wall.setPlayerScore(0);
             wall.wallReset();
             showPauseMenu = false;
             repaint();
