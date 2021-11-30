@@ -4,10 +4,10 @@ This is my coursework for the COMP2042 Software Maintenance module (2021).
 # Brick_Destroy Description
 This is a simple arcade video game.
 The player's goal is to destroy a wall with a small ball.
-The game has very simple commands:
+The game has simple commands:
 SPACE to start/pause the game,
-A to move the player to the left,
-D to move the player to the right,
+A/Left arrow to move the player to the left,
+D/Right arrow to move the player to the right,
 ESC to enter/exit pause menu, 
 ALT+SHIFT+F1 to open the console.
 The game automatically pauses if the frame loses focus.
