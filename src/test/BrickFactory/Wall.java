@@ -49,7 +49,9 @@ public class Wall {
 
         rnd = new Random();
 
+        // set ball position
         makeBall(ballPos);
+
         int speedX, speedY;
         do{
             speedX = rnd.nextInt(5) - 2;
@@ -79,6 +81,7 @@ public class Wall {
 
     // Detect ball collision
     public void findImpacts(){
+        // If ball collides with player bar
         if(player.impact(ball)){
             ball.reverseY();
         }
@@ -88,12 +91,14 @@ public class Wall {
             */
             brickCount--;
         }
+        // If ball collides with window border
         else if(impactBorder()) {
             ball.reverseX();
         }
         else if(ball.getPosition().getY() < area.getY()){
             ball.reverseY();
         }
+        // If ball goes beyond the bottom border, ball is lost
         else if(ball.getPosition().getY() > area.getY() + area.getHeight()){
             ballCount--;
             ballLost = true;
@@ -195,9 +200,11 @@ public class Wall {
     public void setBrickCount(int brickCount) {
         this.brickCount = brickCount;
     }
+
     public Brick[] getBricks(){
         return bricks;
     }
+
     public void setBricks(Brick[] bricks) {
         this.bricks = bricks;
     }

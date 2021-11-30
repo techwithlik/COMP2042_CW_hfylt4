@@ -58,12 +58,16 @@ public class Player {
         return playerFace.contains(b.getPosition()) && playerFace.contains(b.down) ;
     }
 
-    // Move the player
+    // Move the player's bar
     public void move(){
         double x = ballPoint.getX() + moveAmount;
         if(x < min || x > max)
             return;
+
+        // Set location of ball point
         ballPoint.setLocation(x, ballPoint.getY());
+
+        // Set location of bar
         playerFace.setLocation(ballPoint.x - (int)playerFace.getWidth()/2, ballPoint.y);
     }
 

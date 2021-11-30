@@ -29,6 +29,7 @@ public class Level {
          */
         brickCnt -= brickCnt % lineCnt;
 
+        // number of bricks per line
         int brickOnLine = brickCnt / lineCnt;
 
         double brickLen = drawArea.getWidth() / brickOnLine;
@@ -75,7 +76,9 @@ public class Level {
         int centerLeft = brickOnLine / 2 - 1;
         int centerRight = brickOnLine / 2 + 1;
 
+        // Length of each brick
         double brickLen = drawArea.getWidth() / brickOnLine;
+        // Height of the line
         double brickHgt = brickLen / brickSizeRatio;
 
         brickCnt += lineCnt / 2;

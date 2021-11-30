@@ -40,6 +40,7 @@ public class Crack{
         crack.reset();
     }
 
+    // Determine start and end point of crack
     protected void makeCrack(Point2D point, int direction){
         Rectangle bounds = this.brickFace.getBounds();
 
@@ -75,6 +76,7 @@ public class Crack{
         }
     }
 
+    // Draw crack
     protected void makeCrack(Point start, Point end){
 
         GeneralPath path = new GeneralPath();

@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added left and right movements using arrow keys">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Organised files into packages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/ClayBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DebugWindow/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DebugWindow/DebugPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GraphicsMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball/RubberBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/SteelBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/ClayBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638202505000</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Organised files into packages">
+      <created>1638250303854</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638250303855</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +217,7 @@
     <MESSAGE value="Proper spacing and indentation. Added comments" />
     <MESSAGE value="Changed colours for menu and bricks" />
     <MESSAGE value="Added left and right movements using arrow keys" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added left and right movements using arrow keys" />
+    <MESSAGE value="Organised files into packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organised files into packages" />
   </component>
 </project>

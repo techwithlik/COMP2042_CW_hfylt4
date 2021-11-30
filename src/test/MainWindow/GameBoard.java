@@ -39,8 +39,8 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final int TEXT_SIZE = 30;
     private static final Color MENU_COLOR = new Color(175, 228, 250); // Light blue
 
-    private static final int DEF_WIDTH = 600;
-    private static final int DEF_HEIGHT = 450;
+    private static final int DEF_WIDTH = 600; // Frame width
+    private static final int DEF_HEIGHT = 450; // Frame height
 
     private static final Color BG_COLOR = Color.WHITE;
 
@@ -102,7 +102,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
                     level.nextLevel();
                 }
                 else{
-                    message = "ALL WALLS DESTROYED";
+                    message = "GOOD JOB! ALL WALLS HAVE BEEN DESTROYED";
                     gameTimer.stop();
                 }
             }
@@ -113,6 +113,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
     // Set up screen and listens for keyboard and mouse input
     private void initialize(){
+        // set window size
         this.setPreferredSize(new Dimension(DEF_WIDTH, DEF_HEIGHT));
         this.setFocusable(true);
         this.requestFocusInWindow();
@@ -169,18 +170,21 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private void drawBall(Ball ball, Graphics2D g2d){
         Color tmp = g2d.getColor();
 
+        // Get shape of ball
         Shape s = ball.getBallFace();
 
+        // Get color of ball
         g2d.setColor(ball.getInnerColor());
         g2d.fill(s);
 
+        // Get border color of ball
         g2d.setColor(ball.getBorderColor());
         g2d.draw(s);
 
         g2d.setColor(tmp);
     }
 
-    // Set color of player's character
+    // Set color of player's bar
     private void drawPlayer(Player p, Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -200,6 +204,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         drawPauseMenu(g2d);
     }
 
+    // Remove game board
     private void obscureGameBoard(Graphics2D g2d){
         Composite tmp = g2d.getComposite();
         Color tmpColor = g2d.getColor();
