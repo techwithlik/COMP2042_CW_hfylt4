@@ -15,7 +15,14 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package test;
+package test.MainWindow;
+
+import test.Ball.Ball;
+import test.BrickFactory.Brick;
+import test.BrickFactory.Wall;
+import test.DebugWindow.DebugConsole;
+import test.BrickFactory.Level;
+import test.Player.Player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -70,6 +77,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         level = new Level(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), 30, 3, (float)6/2, new Point(300, 430), wall);
 
         debugConsole = new DebugConsole(owner, wall, this);
+
         // Initialize the first level
         level.nextLevel();
 
@@ -128,7 +136,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
             if(!b.isBroken())
                 drawBrick(b, g2d);
 
-        drawPlayer(wall.player,g2d);
+        drawPlayer(wall.player, g2d);
 
         if(showPauseMenu)
             drawMenu(g2d);

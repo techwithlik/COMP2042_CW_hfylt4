@@ -1,4 +1,4 @@
-package test;
+package test.Ball;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -13,11 +13,10 @@ abstract public class Ball {
     private Shape ballFace;
 
     private final Point2D center;
-
-    Point2D up;
-    Point2D down;
-    Point2D left;
-    Point2D right;
+    public Point2D up;
+    public Point2D down;
+    public Point2D left;
+    public Point2D right;
 
     private final Color border;
     private final Color inner;
@@ -38,8 +37,8 @@ abstract public class Ball {
         up.setLocation(center.getX(), center.getY() - (radiusB / 2));
         down.setLocation(center.getX(), center.getY() + (radiusB / 2));
 
-        left.setLocation(center.getX()-(radiusA / 2), center.getY());
-        right.setLocation(center.getX()+(radiusA / 2), center.getY());
+        left.setLocation(center.getX() - (radiusA / 2), center.getY());
+        right.setLocation(center.getX() + (radiusA / 2), center.getY());
 
         ballFace = makeBall(center, radiusA, radiusB);
         this.border = border;
@@ -59,6 +58,7 @@ abstract public class Ball {
         double w = tmp.getWidth();
         double h = tmp.getHeight();
 
+        // Sets the location and size of the framing rectangle
         tmp.setFrame((center.getX() -(w / 2)), (center.getY() - (h / 2)), w, h);
         setPoints(w, h);
 
@@ -109,7 +109,7 @@ abstract public class Ball {
         double w = tmp.getWidth();
         double h = tmp.getHeight();
 
-        tmp.setFrame((center.getX() -(w / 2)),(center.getY() - (h / 2)), w, h);
+        tmp.setFrame((center.getX() - (w / 2)), (center.getY() - (h / 2)), w, h);
         ballFace = tmp;
     }
 

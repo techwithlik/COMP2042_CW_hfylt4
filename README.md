@@ -19,6 +19,7 @@ Typecasting of Variables,
 Removed disposable parameters, unused fields and imports,
 Enhanced switch cases,
 Break up large classes
+Organised files into packages
 
 # Key Additions:
 Move player left and right using arrow keys

@@ -1,8 +1,11 @@
-package test;
+package test.BrickFactory;
+
+import test.BrickFactory.*;
 
 import java.awt.*;
 
 public class Level {
+
     private static final int LEVELS_COUNT = 4;
 
     private static final int CLAY = 1;

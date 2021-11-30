@@ -15,7 +15,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package test;
+package test.BrickFactory;
+
+import test.Ball.Ball;
+import test.Player.Player;
+import test.Ball.RubberBall;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -27,9 +31,9 @@ public class Wall {
     private final Random rnd;
     private final Rectangle area;
 
-    Brick[] bricks;
-    Ball ball;
-    Player player;
+    public Brick[] bricks;
+    public Ball ball;
+    public Player player;
 
     private final Point startPoint;
     private int brickCount;
@@ -39,8 +43,6 @@ public class Wall {
     public Wall(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio, Point ballPos){
 
         this.startPoint = new Point(ballPos);
-
-        int level = 0;
 
         ballCount = 3;
         ballLost = false;

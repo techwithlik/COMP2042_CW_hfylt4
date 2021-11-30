@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Changed colours for menu and bricks">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added left and right movements using arrow keys">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Brick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/CementBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/ClayBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DebugWindow/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DebugWindow/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GraphicsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball/RubberBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/SteelBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BrickFactory/Wall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +56,30 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="deletionFromPopupRequiresConfirmation" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="test.BrickFactory" />
+      <recent name="test.Player" />
+      <recent name="test.MainWindow" />
+      <recent name="test.DebugWIndow" />
+      <recent name="test.Ball" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.GraphicsMain" />
+      <option name="MAIN_CLASS_NAME" value="test.MainWindow.GraphicsMain" />
       <module name="Brick_Destroy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="test.BrickFactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638200250757</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added left and right movements using arrow keys">
+      <created>1638202504999</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638202505000</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +221,7 @@
     <MESSAGE value="Added comments" />
     <MESSAGE value="Proper spacing and indentation. Added comments" />
     <MESSAGE value="Changed colours for menu and bricks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed colours for menu and bricks" />
+    <MESSAGE value="Added left and right movements using arrow keys" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added left and right movements using arrow keys" />
   </component>
 </project>

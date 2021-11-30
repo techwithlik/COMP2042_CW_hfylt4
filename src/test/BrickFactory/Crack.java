@@ -1,4 +1,4 @@
-package test;
+package test.BrickFactory;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
@@ -8,11 +8,9 @@ import java.util.Random;
 
 public class Crack{
 
-    private static final int CRACK_SECTIONS = 3;
     private static final double JUMP_PROBABILITY = 0.7;
 
     private static Random rnd;
-    private String name;
     Shape brickFace;
 
     public static final int LEFT = 10;
@@ -34,7 +32,6 @@ public class Crack{
         this.steps = steps;
     }
 
-
     public GeneralPath draw(){
         return crack;
     }
@@ -50,14 +47,12 @@ public class Crack{
         Point start = new Point();
         Point end = new Point();
 
-
         switch(direction){
             case LEFT:
                 start.setLocation(bounds.x + bounds.width, bounds.y);
                 end.setLocation(bounds.x + bounds.width, bounds.y + bounds.height);
                 Point tmp = makeRandomPoint(start,end,VERTICAL);
                 makeCrack(impact,tmp);
-
                 break;
             case RIGHT:
                 start.setLocation(bounds.getLocation());

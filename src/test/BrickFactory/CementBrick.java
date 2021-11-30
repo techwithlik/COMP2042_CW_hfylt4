@@ -1,4 +1,4 @@
-package test;
+package test.BrickFactory;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
