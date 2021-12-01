@@ -389,7 +389,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     public void mouseMoved(MouseEvent mouseEvent) {
         Point p = mouseEvent.getPoint();
 
-        if(startButton.contains(p) || exitButton.contains(p))
+        if(startButton.contains(p) || exitButton.contains(p) || tutorialButton.contains(p) || backButton.contains(p))
             this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         else
             this.setCursor(Cursor.getDefaultCursor());

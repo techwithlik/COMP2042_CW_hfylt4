@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added Tutorial and Back Buttons">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Ball/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Ball/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added Tutorial Screen, Tutorial and Back Buttons">
       <change beforePath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638352996058</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added Tutorial Screen, Tutorial and Back Buttons">
+      <created>1638370903636</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1638370903652</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +258,7 @@
     <MESSAGE value="Replaced background image" />
     <MESSAGE value="Uploaded background image" />
     <MESSAGE value="Added Tutorial and Back Buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tutorial and Back Buttons" />
+    <MESSAGE value="Added Tutorial Screen, Tutorial and Back Buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tutorial Screen, Tutorial and Back Buttons" />
   </component>
 </project>
