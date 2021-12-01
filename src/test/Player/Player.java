@@ -24,8 +24,8 @@ import java.awt.*;
 
 public class Player {
 
-    public static final Color BORDER_COLOR = new Color(15, 85, 110);
-    public static final Color INNER_COLOR = new Color(75, 160, 219);
+    public static final Color BORDER_COLOR = new Color(67, 67, 67); // Grey
+    public static final Color INNER_COLOR = new Color(88, 88, 88); // Grey
 
     private static final int DEF_MOVE_AMOUNT = 5;
 

@@ -73,7 +73,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
 
     private final GameFrame owner;
 
-    private int strLen = 0;
+    private final int strLen = 0;
 
     private boolean startClicked;
     private boolean exitClicked;
@@ -117,24 +117,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         if (showTutorial) {
             drawContainer(g2d);
 
-            Color tmpColor = g2d.getColor();
-            Font tmpFont = g2d.getFont();
-
-            g2d.setFont(gameTitleFont);
-            g2d.setColor(TEXT_COLOR);
-
-            if (strLen == 0) {
-                FontRenderContext frc = g2d.getFontRenderContext();
-                strLen = gameTitleFont.getStringBounds(TUTORIAL_TEXT, frc).getBounds().width;
-            }
-            int x = (this.getWidth() - strLen) / 2;
-            int y = this.getHeight() / 10 + 20;
-
-            g2d.drawString(TUTORIAL_TEXT, x, y);
             drawButton(g2d);
-
-            g2d.setFont(tmpFont);
-            g2d.setColor(tmpColor);
         }
         else {
             drawContainer(g2d);
@@ -231,7 +214,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
 
         if(showTutorial) {
             int x = (menuFace.width - backButton.width) - 10;
-            int y = (menuFace.height - backButton.height) -10;
+            int y = (menuFace.height - backButton.height) - 10;
 
             backButton.setLocation(x, y);
 

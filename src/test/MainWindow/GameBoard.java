@@ -39,7 +39,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final String PAUSE = "Pause Menu";
 
     // Format for Pause Menu
-    private static final int TEXT_SIZE = 35;
+    private static final int TEXT_SIZE = 36;
     private static final Color MENU_COLOR = new Color(200, 238, 252); // Light blue
 
     // Game frame size
@@ -64,7 +64,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private Rectangle continueButtonRect;
     private Rectangle exitButtonRect;
     private Rectangle restartButtonRect;
-    private Rectangle scoreBoard;
+
     private int strLen;
 
     private final DebugConsole debugConsole;
@@ -136,15 +136,14 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         this.addMouseMotionListener(this);
     }
 
-    // Draw level after pressing start
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
 
         clear(g2d);
 
-        g2d.setColor(Color.BLUE);
-        g2d.drawString(message1, 250, 220);
-        g2d.drawString(message2, 250, 235);
+        g2d.setColor(Color.GRAY);
+        g2d.drawString(message1, 253, 220);
+        g2d.drawString(message2, 253, 235);
 
         drawBall(wall.ball,g2d);
 
@@ -164,6 +163,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private void clear(Graphics2D g2d){
         Color tmp = g2d.getColor();
         g2d.setColor(BG_COLOR);
+
         g2d.fillRect(0, 0, getWidth(), getHeight());
         g2d.setColor(tmp);
     }
@@ -258,7 +258,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         if(continueButtonRect == null){
             FontRenderContext frc = g2d.getFontRenderContext();
             continueButtonRect = menuFont.getStringBounds(CONTINUE, frc).getBounds();
-            continueButtonRect.setLocation(x, y-continueButtonRect.height);
+            continueButtonRect.setLocation(x, y - continueButtonRect.height);
         }
 
         g2d.drawString(CONTINUE, x, y);
@@ -267,7 +267,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         if(restartButtonRect == null){
             restartButtonRect = (Rectangle) continueButtonRect.clone();
-            restartButtonRect.setLocation(x, y-restartButtonRect.height);
+            restartButtonRect.setLocation(x, y- restartButtonRect.height);
         }
 
         g2d.drawString(RESTART, x, y);
@@ -276,7 +276,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         if(exitButtonRect == null){
             exitButtonRect = (Rectangle) continueButtonRect.clone();
-            exitButtonRect.setLocation(x, y-exitButtonRect.height);
+            exitButtonRect.setLocation(x, y - exitButtonRect.height);
         }
 
         g2d.drawString(EXIT, x, y);
