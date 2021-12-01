@@ -1,6 +1,4 @@
-package test.BrickFactory;
-
-import test.BrickFactory.Brick;
+package Main.BrickFactory;
 
 import java.awt.*;
 import java.awt.Point;

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added Tutorial Screen, Tutorial and Back Buttons">
-      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Change cursor when hover over newly added buttons">
+      <change beforePath="$PROJECT_DIR$/src/test/Ball/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Ball/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Ball/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Ball/RubberBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Brick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/CementBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/ClayBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/SteelBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DebugWindow/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DebugWindow/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DebugWindow/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DebugWindow/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GraphicsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +72,11 @@
   </component>
   <component name="RunManager">
     <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.MainWindow.GraphicsMain" />
+      <option name="MAIN_CLASS_NAME" value="Main.MainWindow.GraphicsMain" />
       <module name="Brick_Destroy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.BrickFactory.*" />
+          <option name="PATTERN" value="Main.BrickFactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638370903652</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Change cursor when hover over newly added buttons">
+      <created>1638371289273</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1638371289274</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +281,7 @@
     <MESSAGE value="Uploaded background image" />
     <MESSAGE value="Added Tutorial and Back Buttons" />
     <MESSAGE value="Added Tutorial Screen, Tutorial and Back Buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tutorial Screen, Tutorial and Back Buttons" />
+    <MESSAGE value="Change cursor when hover over newly added buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change cursor when hover over newly added buttons" />
   </component>
 </project>

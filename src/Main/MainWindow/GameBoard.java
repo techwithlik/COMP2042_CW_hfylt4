@@ -15,14 +15,14 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package test.MainWindow;
+package Main.MainWindow;
 
-import test.Ball.Ball;
-import test.BrickFactory.Brick;
-import test.BrickFactory.Wall;
-import test.DebugWindow.DebugConsole;
-import test.BrickFactory.Level;
-import test.Player.Player;
+import Main.Ball.Ball;
+import Main.BrickFactory.Brick;
+import Main.BrickFactory.Wall;
+import Main.DebugWindow.DebugConsole;
+import Main.BrickFactory.Level;
+import Main.Player.Player;
 
 import javax.swing.*;
 import java.awt.*;

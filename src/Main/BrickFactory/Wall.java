@@ -15,11 +15,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package test.BrickFactory;
+package Main.BrickFactory;
 
-import test.Ball.Ball;
-import test.Player.Player;
-import test.Ball.RubberBall;
+import Main.Ball.Ball;
+import Main.Player.Player;
+import Main.Ball.RubberBall;
 
 import java.awt.*;
 import java.awt.geom.Point2D;

@@ -15,10 +15,10 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package test.DebugWindow;
+package Main.DebugWindow;
 
-import test.BrickFactory.Wall;
-import test.BrickFactory.Level;
+import Main.BrickFactory.Wall;
+import Main.BrickFactory.Level;
 
 import javax.swing.*;
 import javax.swing.event.ChangeListener;

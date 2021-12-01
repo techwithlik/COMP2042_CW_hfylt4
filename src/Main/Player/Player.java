@@ -15,9 +15,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package test.Player;
+package Main.Player;
 
-import test.Ball.Ball;
+import Main.Ball.Ball;
 
 import java.awt.*;
 
