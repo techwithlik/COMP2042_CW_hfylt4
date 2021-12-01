@@ -46,7 +46,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final int DEF_WIDTH = 600; // Frame width
     private static final int DEF_HEIGHT = 450; // Frame height
 
-    private static final Color BG_COLOR = new Color(211, 211, 211); // Light grey
+    private static final Color BG_COLOR = new Color(240, 240, 240); // Light grey
 
     private Timer gameTimer;
 
@@ -56,6 +56,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private String message1;
     private String message2;
 
+    // Indicate visibility of Pause Menu
     private boolean showPauseMenu;
 
     private final Font menuFont;
@@ -252,7 +253,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.drawString(PAUSE, x, y);
 
         x = this.getWidth() / 8;
-        y = this.getHeight() / 4;
+        y = this.getHeight() / 5;
 
         if(continueButtonRect == null){
             FontRenderContext frc = g2d.getFontRenderContext();
@@ -271,7 +272,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         g2d.drawString(RESTART, x, y);
 
-        y *= 3.0/2;
+        y *= 1.5;
 
         if(exitButtonRect == null){
             exitButtonRect = (Rectangle) continueButtonRect.clone();
@@ -316,6 +317,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
                     else
                         gameTimer.start();
                 break;
+            // Show Debug Panel
             case KeyEvent.VK_F1:
                 if(keyEvent.isAltDown() && keyEvent.isShiftDown())
                     debugConsole.setVisible(true);

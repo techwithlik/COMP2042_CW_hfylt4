@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Display live score">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Uploaded background image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brick_Destroy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Brick_Destroy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MainWindow/HomeMenu.java" afterDir="false" />
     </list>
@@ -200,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638266220061</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Replaced background image">
+      <created>1638289103000</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1638289103026</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Uploaded background image">
+      <created>1638289403931</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1638289403931</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +243,8 @@
     <MESSAGE value="Organised files into packages" />
     <MESSAGE value="Added comments" />
     <MESSAGE value="Display live score" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display live score" />
+    <MESSAGE value="Replaced background image" />
+    <MESSAGE value="Uploaded background image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploaded background image" />
   </component>
 </project>
