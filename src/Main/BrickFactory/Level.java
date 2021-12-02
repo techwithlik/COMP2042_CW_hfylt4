@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Level {
 
-    private static final int LEVELS_COUNT = 4;
+    private static final int LEVELS_COUNT = 5;
 
     private static final int CLAY = 1;
     private static final int STEEL = 2;
@@ -14,20 +14,20 @@ public class Level {
     private final Wall wall;
     private int level;
 
-    public Level(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio, Point point, Wall wall) {
+    public Level(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio, Wall wall) {
         levels = makeLevels(drawArea, brickCount, lineCount, brickDimensionRatio);
         this.wall = wall;
     }
 
     // Generate Level 1 brick only
-    private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int type) {
+    private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio) {
         /*
-          if brickCount is not divisible by line count,brickCount is adjusted to the biggest
+          If brickCount is not divisible by line count,brickCount is adjusted to the biggest
           multiple of lineCount smaller then brickCount
          */
         brickCnt -= brickCnt % lineCnt;
 
-        // number of bricks per line
+        // Number of bricks per line
         int brickOnLine = brickCnt / lineCnt;
 
         double brickLen = drawArea.getWidth() / brickOnLine;
@@ -49,7 +49,7 @@ public class Level {
             x = (line % 2 == 0) ? x : (x - (brickLen / 2));
             double y = (line) * brickHgt;
             p.setLocation(x, y);
-            tmp[i] = makeBrick(p, brickSize, type);
+            tmp[i] = makeBrick(p, brickSize, Level.CLAY);
         }
 
         for (double y = brickHgt; i < tmp.length; i++, y += 2 * brickHgt) {
@@ -61,7 +61,7 @@ public class Level {
 
     }
 
-    // Generate Level 2,3,4
+    // Generate Level 2,3,4,5
     private Brick[] makeChessboardLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int typeA, int typeB) {
         /*
           if brickCount is not divisible by line count,brickCount is adjusted to the biggest
@@ -106,16 +106,19 @@ public class Level {
             p.setLocation(x, y);
             tmp[i] = makeBrick(p, brickSize, typeA);
         }
+
         return tmp;
     }
 
     // Call levels after generation
     public Brick[][] makeLevels(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio) {
         Brick[][] tmp = new Brick[LEVELS_COUNT][];
-        tmp[0] = makeSingleTypeLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY);
+        tmp[0] = makeSingleTypeLevel(drawArea, brickCount, lineCount, brickDimensionRatio);
         tmp[1] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, CEMENT);
         tmp[2] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, STEEL);
         tmp[3] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, STEEL, CEMENT);
+        // tmp[4] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, STEEL, CEMENT);
+
         return tmp;
     }
 
@@ -138,6 +141,5 @@ public class Level {
             default -> throw new IllegalArgumentException(String.format("Unknown Type:%d\n", type));
         };
     }
-
 
 }

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Renaming of package 'test'">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Amended Tutorial Screen">
+      <change afterPath="$PROJECT_DIR$/Maven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tutorial-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/tutorial-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Ball/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Ball/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -242,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638371854143</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Amended Tutorial Screen">
+      <created>1638411140697</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1638411140697</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +292,7 @@
     <MESSAGE value="Added Tutorial Screen, Tutorial and Back Buttons" />
     <MESSAGE value="Change cursor when hover over newly added buttons" />
     <MESSAGE value="Renaming of package 'test'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renaming of package 'test'" />
+    <MESSAGE value="Amended Tutorial Screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended Tutorial Screen" />
   </component>
 </project>

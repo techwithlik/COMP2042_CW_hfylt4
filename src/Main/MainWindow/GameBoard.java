@@ -43,8 +43,8 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final Color MENU_COLOR = new Color(200, 238, 252); // Light blue
 
     // Game frame size
-    private static final int DEF_WIDTH = 600; // Frame width
-    private static final int DEF_HEIGHT = 450; // Frame height
+    private static final int DEF_WIDTH = 600;
+    private static final int DEF_HEIGHT = 450;
 
     private static final Color BG_COLOR = new Color(240, 240, 240); // Light grey
 
@@ -81,8 +81,8 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         this.initialize();
         message1 = "";
         message2 = "";
-        wall = new Wall(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), 30, 3, (float)6/2, new Point(300, 430));
-        level = new Level(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), 30, 3, (float)6/2, new Point(300, 430), wall);
+        wall = new Wall(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), new Point(300, 430));
+        level = new Level(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), 30, 3, (float)6/2, wall);
 
         debugConsole = new DebugConsole(owner, wall, this);
 

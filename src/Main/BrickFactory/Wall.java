@@ -41,7 +41,7 @@ public class Wall {
     private int playerScore;
     private boolean ballLost;
 
-    public Wall(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio, Point ballPos){
+    public Wall(Rectangle drawArea, Point ballPos){
 
         this.startPoint = new Point(ballPos);
 
@@ -54,12 +54,12 @@ public class Wall {
         makeBall(ballPos);
 
         int speedX, speedY;
-        do{
+        do {
             speedX = rnd.nextInt(5) - 2;
-        }while(speedX == 0);
-        do{
+        } while(speedX == 0);
+        do {
             speedY = -rnd.nextInt(3);
-        }while(speedY == 0);
+        } while(speedY == 0);
 
         ball.setSpeed(speedX, speedY);
 
