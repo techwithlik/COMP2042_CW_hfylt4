@@ -18,6 +18,7 @@
 package Main.DebugWindow;
 
 import Main.Ball.Ball;
+import Main.BrickFactory.Level;
 import Main.BrickFactory.Wall;
 import Main.MainWindow.GameBoard;
 
@@ -34,16 +35,17 @@ public class DebugConsole extends JDialog implements WindowListener{
     private final DebugPanel debugPanel;
     private final GameBoard gameBoard;
     private final Wall wall;
+    private final Level level;
 
-
-    public DebugConsole(JFrame owner, Wall wall, GameBoard gameBoard){
+    public DebugConsole(JFrame owner, Wall wall, GameBoard gameBoard, Level level){
 
         this.wall = wall;
         this.owner = owner;
         this.gameBoard = gameBoard;
+        this.level = level;
         initialize();
 
-        debugPanel = new DebugPanel(wall);
+        debugPanel = new DebugPanel(wall, this.level);
         this.add(debugPanel, BorderLayout.CENTER);
 
         this.pack();

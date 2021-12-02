@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Introduced a new level">
-      <change beforePath="$PROJECT_DIR$/src/Main/Ball/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Ball/RubberBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/DebugWindow/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DebugWindow/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/DebugWindow/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DebugWindow/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
