@@ -24,6 +24,6 @@ Added comments
 
 # Key Additions:
 Ability to move player's bar left and right using arrow keys,
-Tutorial button and instructions screen, 
+Tutorial button, back button, and tutorial screen, 
 See live score,
-Changed colors of elements to improve user interface
+Inserted background images and changed colors of elements to improve user interface

@@ -43,6 +43,7 @@ abstract public class Ball {
         ballFace = makeBall(center, radiusA, radiusB);
         this.border = border;
         this.inner  = inner;
+
         // Initialise speed
         speedX = 0;
         speedY = 0;

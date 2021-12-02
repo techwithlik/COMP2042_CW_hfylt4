@@ -54,6 +54,8 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.pack();
         this.autoLocate();
         this.setVisible(true);
+        // So user cannot resize the frame
+        this.setResizable(false);
     }
 
     public void enableGameBoard(){
@@ -62,7 +64,7 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.add(gameBoard, BorderLayout.CENTER);
         this.setUndecorated(false);
         initialize();
-        /*to avoid problems with graphics focus controller is added here*/
+        /* to avoid problems with graphics focus controller is added here */
         this.addWindowFocusListener(this);
     }
 
