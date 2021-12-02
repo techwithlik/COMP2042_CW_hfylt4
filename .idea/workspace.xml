@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Introduced a new level">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Ball/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Ball/RubberBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/ClayBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/SteelBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
