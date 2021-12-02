@@ -20,10 +20,12 @@ Removed disposable parameters, unused fields and imports,
 Enhanced switch cases,
 Break up large classes,
 Organised files into packages,
-Added comments
+Added comments,
+Used the Maven build tool
 
 # Key Additions:
 Ability to move player's bar left and right using arrow keys,
 Tutorial button, back button, and tutorial screen, 
-See live score,
+Points system where points are rewarded for bricks destroyed and penalised for losing a ball,
+See live points scored,
 Inserted background images and changed colors of elements to improve user interface

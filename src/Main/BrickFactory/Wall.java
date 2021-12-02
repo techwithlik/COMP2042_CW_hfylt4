@@ -102,6 +102,7 @@ public class Wall {
         // If ball goes beyond the bottom border, ball is lost
         else if(ball.getPosition().getY() > area.getY() + area.getHeight()){
             ballCount--;
+            // Penalty of -100 points if ball is lost
             playerScore-=100;
             ballLost = true;
         }

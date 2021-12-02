@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Amended Tutorial Screen">
-      <change afterPath="$PROJECT_DIR$/Maven/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Used Maven Build Tool">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tutorial-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/tutorial-bg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" afterDir="false" />
     </list>
@@ -255,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638411140697</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Used Maven Build Tool">
+      <created>1638425903267</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1638425903316</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,6 +298,7 @@
     <MESSAGE value="Change cursor when hover over newly added buttons" />
     <MESSAGE value="Renaming of package 'test'" />
     <MESSAGE value="Amended Tutorial Screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amended Tutorial Screen" />
+    <MESSAGE value="Used Maven Build Tool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Used Maven Build Tool" />
   </component>
 </project>
