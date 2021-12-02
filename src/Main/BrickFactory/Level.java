@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Level {
 
-    private static final int LEVELS_COUNT = 5;
+    private static final int LEVELS_COUNT = 6;
 
     private static final int CLAY = 1;
     private static final int STEEL = 2;
@@ -24,7 +24,7 @@ public class Level {
         /*
           If brickCount is not divisible by line count,brickCount is adjusted to the biggest
           multiple of lineCount smaller then brickCount
-         */
+        */
         brickCnt -= brickCnt % lineCnt;
 
         // Number of bricks per line
@@ -117,7 +117,8 @@ public class Level {
         tmp[1] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, CEMENT);
         tmp[2] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, STEEL);
         tmp[3] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, STEEL, CEMENT);
-        // tmp[4] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, STEEL, CEMENT);
+        tmp[4] = makeChessboardLevel(drawArea, 50, 5, brickDimensionRatio, STEEL, CEMENT);
+        tmp[5] = makeChessboardLevel(drawArea, 60, 6, brickDimensionRatio, STEEL, CEMENT);
 
         return tmp;
     }

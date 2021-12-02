@@ -53,12 +53,12 @@ public class Wall {
         // set ball position
         makeBall(ballPos);
 
-        int speedX, speedY;
+        int speedX = 1, speedY = 1;
         do {
-            speedX = rnd.nextInt(5) - 2;
+            speedX = rnd.nextInt(6) - 2;
         } while(speedX == 0);
         do {
-            speedY = -rnd.nextInt(3);
+            speedY = -rnd.nextInt(4);
         } while(speedY == 0);
 
         ball.setSpeed(speedX, speedY);
@@ -103,7 +103,7 @@ public class Wall {
         else if(ball.getPosition().getY() > area.getY() + area.getHeight()){
             ballCount--;
             // Penalty of -100 points if ball is lost
-            playerScore-=100;
+            playerScore-=250;
             ballLost = true;
         }
     }

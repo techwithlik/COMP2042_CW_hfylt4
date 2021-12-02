@@ -3,7 +3,6 @@ package Main.BrickFactory;
 import java.awt.*;
 import java.awt.Point;
 
-
 /**
  * Created by filippo on 04/09/16.
  */
@@ -29,4 +28,5 @@ public class ClayBrick extends Brick {
     public Shape getBrick() {
         return super.brickFace;
     }
+
 }

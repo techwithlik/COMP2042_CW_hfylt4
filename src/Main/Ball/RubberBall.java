@@ -32,7 +32,6 @@ public class RubberBall extends Ball {
         super(center, DEF_RADIUS, DEF_RADIUS, DEF_INNER_COLOR, DEF_BORDER_COLOR);
     }
 
-
     @Override
     protected Shape makeBall(Point2D center, float radiusA, float radiusB) {
 
