@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.Point;
 import java.awt.geom.Point2D;
 import java.util.Random;
+import java.awt.geom.GeneralPath;
 
 /**
  * Created by filippo on 04/09/16.
@@ -22,7 +23,7 @@ abstract public class Brick  {
     public static final int RIGHT_IMPACT = 400;
 
     private static Random rnd;
-
+    public Random random;
     private final String name;
     Shape brickFace;
 
@@ -103,6 +104,19 @@ abstract public class Brick  {
     public void impact(){
         strength--;
         broken = (strength == 0);
+    }
+
+    static Random getRnd() {
+        return rnd;
+    }
+    public static void setRnd(Random rnd) {
+        Brick.rnd = rnd;
+    }
+    public Shape getBrickFace(){
+        return brickFace;
+    }
+    public void setBrickFace(Shape brickFace) {
+        this.brickFace = brickFace;
     }
 }
 

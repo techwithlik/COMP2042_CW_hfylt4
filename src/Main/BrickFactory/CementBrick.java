@@ -18,8 +18,8 @@ public class CementBrick extends Brick {
 
     public CementBrick(Point point, Dimension size){
         super(NAME, point, size, DEF_BORDER, DEF_INNER, CEMENT_STRENGTH);
-        crack = new Crack(DEF_CRACK_DEPTH, DEF_STEPS);
-        brickFace = super.brickFace;
+        crack = new Crack(DEF_CRACK_DEPTH, DEF_STEPS, super.getBrickFace());
+        brickFace = super.getBrickFace();
     }
 
     @Override
@@ -48,7 +48,7 @@ public class CementBrick extends Brick {
     private void updateBrick(){
         if(!super.isBroken()){
             GeneralPath gp = crack.draw();
-            gp.append(super.brickFace, false);
+            gp.append(super.getBrickFace(), false);
             brickFace = gp;
         }
     }
@@ -56,6 +56,6 @@ public class CementBrick extends Brick {
     public void repair(){
         super.repair();
         crack.reset();
-        brickFace = super.brickFace;
+        brickFace = super.getBrickFace();
     }
 }
