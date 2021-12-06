@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Encapsulation">
-      <change afterPath="$PROJECT_DIR$/resources/highscore.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/HighScore.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added high scores screen">
+      <change afterPath="$PROJECT_DIR$/src/main/GameTimer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brick_Destroy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Brick_Destroy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/start-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/start-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tutorial-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tutorial-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/HighScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/HomeMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638759531513</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added high scores screen">
+      <created>1638766838357</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1638766838357</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,7 +328,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Did proper indentation" />
     <MESSAGE value="Typecasting of variables" />
     <MESSAGE value="Removed disposable parameters and unused fields" />
     <MESSAGE value="Separated Crack from Brick class. Edited README" />
@@ -350,6 +352,7 @@
     <MESSAGE value="Fixed Skip Level problems" />
     <MESSAGE value="Fixed cement brick cracking problem" />
     <MESSAGE value="Encapsulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulation" />
+    <MESSAGE value="Added high scores screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added high scores screen" />
   </component>
 </project>

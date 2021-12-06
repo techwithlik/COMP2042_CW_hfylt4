@@ -28,5 +28,7 @@ Ability to move player's bar left and right using arrow keys,
 Tutorial button, back button, and tutorial screen, 
 Points system where points are rewarded for bricks destroyed and penalised for losing a ball,
 See live points scored,
+See and set high scores,
+Stopwatch function,
 Additional levels,
 Inserted background images and changed colors of elements to improve user interface

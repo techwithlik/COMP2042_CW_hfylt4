@@ -12,7 +12,7 @@ public class HighScore extends JFrame implements ActionListener {
     private static final int FRAME_WIDTH = 450;
     private static final int FRAME_HEIGHT = 300;
 
-    private JButton quitGameButton;
+    private JButton exitGameButton;
     private JLabel label1;
     private JLabel label2;
     private JLabel label3;
@@ -24,7 +24,7 @@ public class HighScore extends JFrame implements ActionListener {
     public HighScore(Wall wall){
         this.wall = wall;
         highScoreRecord = wall.getHighScore();
-        createQuitGameButton();
+        createExitGameButton();
         displayText();
 
         ImageIcon gameOver = new ImageIcon("resources/gameOver-bg.jpg");
@@ -34,7 +34,7 @@ public class HighScore extends JFrame implements ActionListener {
         background.add(label2);
         background.add(label3);
         background.add(label4);
-        background.add(quitGameButton);
+        background.add(exitGameButton);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -64,7 +64,7 @@ public class HighScore extends JFrame implements ActionListener {
         label2.setFont(new Font(null, Font.PLAIN, 20));
 
         label3 = new JLabel();
-        String text2 = "<html><h2 align = 'center'>HIGH SCORE BOARD</h2>";
+        String text2 = "<html><h2 align = 'center'>LEADERBOARD: </h2>";
         label3.setText(text2);
         label3.setForeground(Color.WHITE);
         label3.setBounds(135, 130, 300, 75);
@@ -76,20 +76,20 @@ public class HighScore extends JFrame implements ActionListener {
         label4.setFont(new Font(null, Font.PLAIN, 20));
     }
 
-    private void createQuitGameButton() {
-        quitGameButton = new JButton("QUIT GAME");
-        quitGameButton.setBounds(125, 230, 200, 30);
-        quitGameButton.setHorizontalTextPosition(JButton.CENTER);
-        quitGameButton.setVerticalTextPosition(JButton.CENTER);
-        quitGameButton.setBackground(Color.GRAY);
-        quitGameButton.setForeground(Color.WHITE);
-        quitGameButton.setFocusable(false);
-        quitGameButton.addActionListener(this);
+    private void createExitGameButton() {
+        exitGameButton = new JButton("EXIT GAME");
+        exitGameButton.setBounds(125, 230, 200, 30);
+        exitGameButton.setHorizontalTextPosition(JButton.CENTER);
+        exitGameButton.setVerticalTextPosition(JButton.CENTER);
+        exitGameButton.setBackground(Color.GRAY);
+        exitGameButton.setForeground(Color.WHITE);
+        exitGameButton.setFocusable(false);
+        exitGameButton.addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == quitGameButton){
+        if(e.getSource() == exitGameButton){
             System.exit(0);
         }
     }
