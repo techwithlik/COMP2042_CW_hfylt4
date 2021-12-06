@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added high scores screen">
-      <change afterPath="$PROJECT_DIR$/src/main/GameTimer.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added stopwatch function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/HighScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GraphicsMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638766838357</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Added stopwatch function">
+      <created>1638783160086</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1638783160086</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +335,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Typecasting of variables" />
     <MESSAGE value="Removed disposable parameters and unused fields" />
     <MESSAGE value="Separated Crack from Brick class. Edited README" />
     <MESSAGE value="Added documentation of work done in README" />
@@ -353,6 +359,7 @@
     <MESSAGE value="Fixed cement brick cracking problem" />
     <MESSAGE value="Encapsulation" />
     <MESSAGE value="Added high scores screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added high scores screen" />
+    <MESSAGE value="Added stopwatch function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added stopwatch function" />
   </component>
 </project>

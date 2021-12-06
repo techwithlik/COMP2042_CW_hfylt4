@@ -50,28 +50,27 @@ public class HighScore extends JFrame implements ActionListener {
         label1 = new JLabel();
 
         String text = "<html><h1 align = 'center'>GAME OVER!</h1>";
-        text = text + "<html><h2 align = 'center'>YOUR CURRENT SCORE IS</h2>";
+        text = text + "<html><h2 align = 'center'>YOUR SCORE IS</h2>";
 
         label1.setText(text);
         label1.setForeground(Color.WHITE);
-        label1.setBounds(110, 0, 300, 150);
+        label1.setBounds(150, 0, 300, 150);
 
-        label2=new JLabel();
+        label2 = new JLabel();
         label2.setText(Integer.toString(wall.getPlayerScore()));
-        System.out.println(wall.getPlayerScore());
         label2.setForeground(Color.WHITE);
-        label2.setBounds(220, 105, 100, 50);
+        label2.setBounds(200, 105, 100, 50);
         label2.setFont(new Font(null, Font.PLAIN, 20));
 
         label3 = new JLabel();
-        String text2 = "<html><h2 align = 'center'>LEADERBOARD: </h2>";
+        String text2 = "<html><h2 align = 'center'>HIGH SCORE IS HELD BY</h2>";
         label3.setText(text2);
         label3.setForeground(Color.WHITE);
-        label3.setBounds(135, 130, 300, 75);
+        label3.setBounds(125, 130, 300, 75);
 
         label4 = new JLabel();
         label4.setText(highScoreRecord);
-        label4.setBounds(210, 170, 100, 50);
+        label4.setBounds(200, 170, 100, 50);
         label4.setForeground(Color.WHITE);
         label4.setFont(new Font(null, Font.PLAIN, 20));
     }
@@ -81,7 +80,7 @@ public class HighScore extends JFrame implements ActionListener {
         exitGameButton.setBounds(125, 230, 200, 30);
         exitGameButton.setHorizontalTextPosition(JButton.CENTER);
         exitGameButton.setVerticalTextPosition(JButton.CENTER);
-        exitGameButton.setBackground(Color.GRAY);
+        exitGameButton.setBackground(Color.LIGHT_GRAY);
         exitGameButton.setForeground(Color.WHITE);
         exitGameButton.setFocusable(false);
         exitGameButton.addActionListener(this);

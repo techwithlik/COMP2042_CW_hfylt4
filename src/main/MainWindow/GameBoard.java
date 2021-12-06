@@ -41,7 +41,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final String PAUSE = "Pause Menu";
 
     // Format for Pause Menu
-    private static final int TEXT_SIZE = 36;
+    private static final int TEXT_SIZE = 34;
     private static final Color MENU_COLOR = new Color(200, 238, 252); // Light blue
 
     // Game frame size
@@ -86,7 +86,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         this.initialize();
 
-        message1 = "";
+        message1 = "Press SPACE to start";
         message2 = "";
         highScoreMessage = "";
         timeMessage = "";

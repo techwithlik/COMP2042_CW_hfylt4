@@ -259,10 +259,10 @@ public class Wall {
             String name = JOptionPane.showInputDialog("You've created a new high score! What is your name?");
             highScore = name + ":" + playerScore;
             /*
-            .dat file is used because I don't want to let user edit the highScore file
-            to change the high score
+            .dat file is used so the user cannot edit the highScore
+            file to change the high score
             */
-            File scoreFile = new File("src/main/resources/highscore.dat");
+            File scoreFile = new File("resources/highscore.dat");
             if(!scoreFile.exists())
             {
                 try {
@@ -277,9 +277,8 @@ public class Wall {
                 writeFile = new FileWriter(scoreFile);
                 writer = new BufferedWriter(writeFile);
                 /*
-                write operation is used instead of
-                append operation to ensure only the
-                name of the person who scores the highest score and
+                write operation is used instead of append operation
+                to ensure only the name of the person who scores the highest score and
                 the highest score is kept inside highscore.dat file
                  */
                 writer.write(this.highScore);

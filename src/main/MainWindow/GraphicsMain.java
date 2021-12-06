@@ -19,9 +19,14 @@ package main.MainWindow;
 
 import java.awt.*;
 
+/**
+ * This is the main class of Brick Breaker game
+ * @author Tan Lik Wei
+ * @version 2.0
+ * @since 27/11/2021
+ */
 
 public class GraphicsMain {
-
     public static void main(String[] args){
         EventQueue.invokeLater(() -> new GameFrame().initialize());
     }
