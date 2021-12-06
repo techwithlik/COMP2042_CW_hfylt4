@@ -22,6 +22,7 @@ import main.BrickFactory.Brick;
 import main.BrickFactory.Wall;
 import main.DebugWindow.DebugConsole;
 import main.BrickFactory.Level;
+import main.HighScore;
 import main.Player.Player;
 
 import javax.swing.*;
@@ -52,9 +53,11 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
     private final Wall wall;
     private final Level level;
+    private HighScore highScore;
 
     private String message1;
     private String message2;
+    private String highScoreMessage;
 
     // Indicate visibility of Pause Menu
     private boolean showPauseMenu;
@@ -81,6 +84,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         this.initialize();
         message1 = "";
         message2 = "";
+        highScoreMessage = "";
         wall = new Wall(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), new Point(300, 430));
         level = new Level(new Rectangle(0, 0, DEF_WIDTH, DEF_HEIGHT), 30, 3, (float)6/2, wall);
 
@@ -94,10 +98,13 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
             wall.findImpacts();
             message1 = String.format("Bricks: %d Balls: %d", wall.getBrickCount(), wall.getBallCount());
             message2 = String.format("Score: %d", wall.getPlayerScore());
+            highScoreMessage = String.format("Record set by %s", wall.readHighScore());
 
             if(wall.isBallLost()){
                 if(wall.ballEnd()){
+                    wall.checkScore();
                     wall.wallReset();
+                    highScore = new HighScore(wall);
                     message1 = String.format("Game Over! You scored %d points", wall.getPlayerScore());
                     message2 = "Press SPACE to play again.";
                     wall.setPlayerScore(0);
@@ -117,6 +124,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
                 else{
                     message1 = "GOOD JOB!";
                     message2 = "ALL WALLS HAVE BEEN DESTROYED";
+                    wall.checkScore();
                     gameTimer.stop();
                 }
             }
@@ -143,7 +151,8 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         g2d.setColor(Color.GRAY);
         g2d.drawString(message1, 253, 220);
-        g2d.drawString(message2, 253, 235);
+        g2d.drawString(message2, 253, 240);
+        g2d.drawString(highScoreMessage, 253, 260);
 
         drawBall(wall.ball,g2d);
 
@@ -343,7 +352,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         }
         else if(restartButtonRect.contains(p)){
             message1 = "Restarting Game...";
-            message2 = "Press Space to Start.";
+            message2 = "Press SPACE to Start.";
             wall.ballReset();
             wall.setPlayerScore(0);
             wall.wallReset();

@@ -144,14 +144,14 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         if(showTutorial)
         {
             g2d.fill(menuFace);
-            Image picture = Toolkit.getDefaultToolkit().getImage("images/tutorial-bg.jpg");
+            Image picture = Toolkit.getDefaultToolkit().getImage("resources/tutorial-bg.jpg");
             g2d.drawImage(picture, 0, 0, this);
         }
         else
         {
             // Background image
             g2d.fill(menuFace);
-            Image picture = Toolkit.getDefaultToolkit().getImage("images/start-bg.jpg");
+            Image picture = Toolkit.getDefaultToolkit().getImage("resources/start-bg.jpg");
             g2d.drawImage(picture, 0, 0, this);
         }
 

@@ -24,7 +24,8 @@ import main.Ball.RubberBall;
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.util.Random;
-
+import java.io.*;
+import javax.swing.*;
 
 public class Wall {
 
@@ -39,6 +40,7 @@ public class Wall {
     private int brickCount;
     private int ballCount;
     private int playerScore;
+    private String highScore = "";
     private boolean ballLost;
 
     public Wall(Rectangle drawArea, Point ballPos){
@@ -67,6 +69,11 @@ public class Wall {
 
         area = drawArea;
 
+        if(highScore.equals(""))
+        {
+            //initialise high score
+            highScore = this.readHighScore();
+        }
     }
 
     // Instantiate ball
@@ -220,5 +227,83 @@ public class Wall {
 
     public void setBricks(Brick[] bricks) {
         this.bricks = bricks;
+    }
+
+    public String readHighScore(){
+        FileReader readFile;
+        BufferedReader reader = null;
+        try {
+            readFile = new FileReader("resources/highscore.dat");
+            reader = new BufferedReader(readFile);
+            return reader.readLine();
+        }
+        catch (Exception e) {
+            return "Nobody:0";
+        }
+        finally {
+            try{
+                if(reader != null)
+                    reader.close();
+            }
+            catch (IOException e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void checkScore(){
+        if (highScore.equals("")) {
+            return;
+        }
+        if(playerScore > Integer.parseInt(highScore.split(":")[1])){
+            String name = JOptionPane.showInputDialog("You've created a new high score! What is your name?");
+            highScore = name + ":" + playerScore;
+            /*
+            .dat file is used because I don't want to let user edit the highScore file
+            to change the high score
+            */
+            File scoreFile = new File("src/main/resources/highscore.dat");
+            if(!scoreFile.exists())
+            {
+                try {
+                    scoreFile.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            FileWriter writeFile;
+            BufferedWriter writer = null;
+            try {
+                writeFile = new FileWriter(scoreFile);
+                writer = new BufferedWriter(writeFile);
+                /*
+                write operation is used instead of
+                append operation to ensure only the
+                name of the person who scores the highest score and
+                the highest score is kept inside highscore.dat file
+                 */
+                writer.write(this.highScore);
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            finally {
+                try {
+                    if (writer != null)
+                        writer.close();
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public String getHighScore() {
+        return highScore;
+    }
+
+    public void setHighScore(String highScore) {
+        this.highScore = highScore;
     }
 }
