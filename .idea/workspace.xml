@@ -6,10 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Fixed cement brick cracking problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Ball/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Ball/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Ball/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Ball/RubberBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Brick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/CementBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/ClayBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/SteelBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/DebugWindow/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DebugWindow/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/DebugWindow/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DebugWindow/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GraphicsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +77,11 @@
   </component>
   <component name="RunManager">
     <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.MainWindow.GraphicsMain" />
+      <option name="MAIN_CLASS_NAME" value="main.MainWindow.GraphicsMain" />
       <module name="Brick_Destroy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Main.BrickFactory.*" />
+          <option name="PATTERN" value="main.BrickFactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -281,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638443205279</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Fixed cement brick cracking problem">
+      <created>1638450831554</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1638450831583</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

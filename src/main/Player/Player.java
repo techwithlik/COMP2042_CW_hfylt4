@@ -15,9 +15,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package Main.Player;
+package main.Player;
 
-import Main.Ball.Ball;
+import main.Ball.Ball;
 
 import java.awt.*;
 
@@ -55,7 +55,7 @@ public class Player {
     }
 
     public boolean impact(Ball b){
-        return playerFace.contains(b.getPosition()) && playerFace.contains(b.down) ;
+        return playerFace.contains(b.getPosition()) && playerFace.contains(b.getDown()) ;
     }
 
     // Move the player's bar

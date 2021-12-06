@@ -15,11 +15,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package Main.BrickFactory;
+package main.BrickFactory;
 
-import Main.Ball.Ball;
-import Main.Player.Player;
-import Main.Ball.RubberBall;
+import main.Ball.Ball;
+import main.Player.Player;
+import main.Ball.RubberBall;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -115,25 +115,25 @@ public class Wall {
                 //Vertical Impact
                 case Brick.UP_IMPACT -> {
                     ball.reverseY();
-                    playerScore+=100;
-                    return b.setImpact(ball.down, Crack.UP);
+                    playerScore+=50;
+                    return b.setImpact(ball.getDown(), Crack.UP);
                 }
                 case Brick.DOWN_IMPACT -> {
                     ball.reverseY();
-                    playerScore+=100;
-                    return b.setImpact(ball.up, Crack.DOWN);
+                    playerScore+=50;
+                    return b.setImpact(ball.getUp(), Crack.DOWN);
                 }
 
                 // Horizontal Impact
                 case Brick.LEFT_IMPACT -> {
                     ball.reverseX();
-                    playerScore+=100;
-                    return b.setImpact(ball.right, Crack.RIGHT);
+                    playerScore+=50;
+                    return b.setImpact(ball.getRight(), Crack.RIGHT);
                 }
                 case Brick.RIGHT_IMPACT -> {
                     ball.reverseX();
-                    playerScore+=100;
-                    return b.setImpact(ball.left, Crack.LEFT);
+                    playerScore+=50;
+                    return b.setImpact(ball.getLeft(), Crack.LEFT);
                 }
             }
         }
