@@ -27,6 +27,9 @@ import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
+/**
+ * The frame on which the debug panel is on.
+ */
 public class DebugConsole extends JDialog implements WindowListener{
 
     private static final String TITLE = "Debug Console";
@@ -37,6 +40,13 @@ public class DebugConsole extends JDialog implements WindowListener{
     private final Wall wall;
     private final Level level;
 
+    /**
+     * Constructs and initializes the debug console
+     * @param owner Owner frame
+     * @param wall Instance of the wall class
+     * @param gameBoard Instance of gameBoard
+     * @param level Instance of the level class
+     */
     public DebugConsole(JFrame owner, Wall wall, GameBoard gameBoard, Level level){
 
         this.wall = wall;
@@ -51,6 +61,7 @@ public class DebugConsole extends JDialog implements WindowListener{
         this.pack();
     }
 
+    /** Initializes the scope of the frame. */
     private void initialize(){
         this.setModal(true);
         this.setTitle(TITLE);
@@ -60,6 +71,7 @@ public class DebugConsole extends JDialog implements WindowListener{
         this.setFocusable(true);
     }
 
+    /** Sets the location of the frame. */
     private void setLocation(){
         int x = ((owner.getWidth() - this.getWidth()) / 2) + owner.getX();
         int y = ((owner.getHeight() - this.getHeight()) / 2) + owner.getY();

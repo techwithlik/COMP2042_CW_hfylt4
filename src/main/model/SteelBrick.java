@@ -24,6 +24,7 @@ import java.awt.geom.Point2D;
 import java.util.Random;
 
 
+/** Characteristics and features for Steel Brick */
 public class SteelBrick extends Brick {
 
     private static final String NAME = "Steel Brick";
@@ -35,9 +36,13 @@ public class SteelBrick extends Brick {
     private final Random rnd;
     private final Shape brickFace;
 
-
+    /**
+     * Constructs and initializes the SteelBrick
+     * @param point (x,y) coordinates
+     * @param size Integer values for the brick's height and width
+     */
     public SteelBrick(Point point, Dimension size){
-        super(NAME, point, size, DEF_BORDER, DEF_INNER, STEEL_STRENGTH);
+        super(point, size, DEF_BORDER, DEF_INNER, STEEL_STRENGTH);
         rnd = new Random();
         brickFace = super.brickFace;
     }
@@ -52,6 +57,11 @@ public class SteelBrick extends Brick {
         return brickFace;
     }
 
+    /**
+     * Sets the impact of the ball on each of the bricks
+     * @param dir Integer value
+     * @param point (x,y) coordinates
+     */
     public boolean setImpact(Point2D point, int dir){
         if(!super.isBroken())
             return false;
@@ -59,6 +69,7 @@ public class SteelBrick extends Brick {
         return !super.isBroken();
     }
 
+    /** Determines the impact based on a random double.*/
     public void impact(){
         if(rnd.nextDouble() < STEEL_PROBABILITY){
             super.impact();

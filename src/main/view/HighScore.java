@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
+/** High score screen */
 public class HighScore extends JFrame implements ActionListener {
 
     private static final int FRAME_WIDTH = 450;

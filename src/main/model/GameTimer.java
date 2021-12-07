@@ -4,18 +4,17 @@ import java.util.TimerTask;
 import java.util.Timer;
 
 
+/** Timer feature */
 public class GameTimer {
 
     private int gameTime;
     private int seconds;
     private int minutes;
-    private Timer timer;
-    private TimerTask task;
     private boolean gaming = false;
 
     public GameTimer() {
-        timer = new Timer();
-        task = new TimerTask() {
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
             @Override
             public void run() {
                 if (isGaming()) {
@@ -34,16 +33,8 @@ public class GameTimer {
         return seconds;
     }
 
-    public void setSeconds(int seconds) {
-        this.seconds = seconds;
-    }
-
     public int getMinutes() {
         return minutes;
-    }
-
-    public void setMinutes(int minutes) {
-        this.minutes = minutes;
     }
 
     public boolean isGaming() {

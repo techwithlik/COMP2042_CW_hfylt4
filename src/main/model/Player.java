@@ -20,6 +20,7 @@ package main.model;
 import java.awt.*;
 
 
+/** Characteristics and features for Player's rectangle */
 public class Player {
 
     public static final Color BORDER_COLOR = new Color(67, 67, 67); // Grey
@@ -34,6 +35,13 @@ public class Player {
     private final int max;
 
 
+    /**
+     * Constructs and initializes the player's rectangle
+     * @param ballPoint Set of coordinates
+     * @param width Width of the player
+     * @param height Height of the player
+     * @param container Boundaries for the rectangle
+     */
     public Player(Point ballPoint, int width, int height, Rectangle container) {
         this.ballPoint = ballPoint;
 
@@ -46,17 +54,28 @@ public class Player {
         playerFace = makeRectangle(width, height);
     }
 
+    /**
+     * Create the rectangle.
+     * @param width Width of the player
+     * @param height Height of the player
+     * @return A rectangle drawing
+     */
     private Rectangle makeRectangle(int width,int height){
         Point p = new Point((int)(ballPoint.getX() - (width / 2)), (int)ballPoint.getY());
 
         return new Rectangle(p,new Dimension(width, height));
     }
 
+    /**
+     * Determines if the ball is touching the player's rectangle.
+     * @param b Instance of the ball class
+     * @return Boolean value
+     */
     public boolean impact(Ball b){
         return playerFace.contains(b.getPosition()) && playerFace.contains(b.getDown()) ;
     }
 
-    // Move the player's bar
+    /** Moves the player's bar within the limit */
     public void move(){
         double x = ballPoint.getX() + moveAmount;
         if(x < min || x > max)
@@ -81,10 +100,14 @@ public class Player {
         moveAmount = 0;
     }
 
+    /** Get the shape of the player. */
     public Shape getPlayerFace(){
         return  playerFace;
     }
 
+    /**
+     * Moves the player to a location
+     * @param p x and y coordinates.*/
     public void moveTo(Point p){
         ballPoint.setLocation(p);
         playerFace.setLocation(ballPoint.x - (int)playerFace.getWidth()/2, ballPoint.y);

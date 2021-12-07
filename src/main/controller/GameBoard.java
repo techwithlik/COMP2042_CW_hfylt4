@@ -30,6 +30,9 @@ import java.awt.event.*;
 import java.awt.font.FontRenderContext;
 
 
+/**
+ * GameBoard is the panel / label that Brick Destroy is played on.
+ */
 public class GameBoard extends JComponent implements KeyListener, MouseListener, MouseMotionListener {
 
     // Text in Pause Menu
@@ -74,6 +77,10 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private final DebugConsole debugConsole;
 
 
+    /**
+     * Constructs and initializes a frame for the game to be played on.
+     * Initializes the gameTimer, DebugConsole frame, a wall and level object.
+     */
     public GameBoard(JFrame owner){
         super();
 
@@ -82,6 +89,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         menuFont = new Font("Monospaced", Font.PLAIN, TEXT_SIZE);
 
+        /** Initializes the scopes of a frame. */
         this.initialize();
 
         message1 = "Press SPACE to start";
@@ -154,6 +162,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         this.addMouseMotionListener(this);
     }
 
+    /** Renders the wall, ball, player, and brick drawings */
     public void paint(Graphics g){
         Graphics2D g2d = (Graphics2D) g;
 
@@ -181,7 +190,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         Toolkit.getDefaultToolkit().sync();
     }
 
-    // Clear the stage
+    /** Clears the stage or frame it is called into. */
     private void clear(Graphics2D g2d){
         Color tmp = g2d.getColor();
         g2d.setColor(BG_COLOR);
@@ -190,7 +199,10 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setColor(tmp);
     }
 
-    // Set color of the border and inside of the bricks
+    /** Initializes and draws a rectangle.
+     * Set color of the border and inside of the bricks
+     * @param brick Instance of Brick
+     */
     private void drawBrick(Brick brick, Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -203,7 +215,10 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setColor(tmp);
     }
 
-    // Set color of ball
+    /**
+     * Initializes and draws a ball. Sets color of ball
+     * @param ball Instance of the abstract class Ball
+     */
     private void drawBall(Ball ball, Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -221,7 +236,9 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setColor(tmp);
     }
 
-    // Set color of player's bar
+    /** Initializes and draws a rectangle.
+     * @param p Instance of the class Player.
+     */
     private void drawPlayer(Player p, Graphics2D g2d){
         Color tmp = g2d.getColor();
 
@@ -235,13 +252,13 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setColor(tmp);
     }
 
-    // Draw pause menu
+    /** Initializes and draws the Pause Menu. */
     private void drawMenu(Graphics2D g2d){
         obscureGameBoard(g2d);
         drawPauseMenu(g2d);
     }
 
-    // Remove game board
+    /** Initializes the render details of the 2d drawings. */
     private void obscureGameBoard(Graphics2D g2d){
         Composite tmp = g2d.getComposite();
         Color tmpColor = g2d.getColor();
@@ -256,7 +273,8 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setColor(tmpColor);
     }
 
-    // Draw pause menu, and set up buttons
+    /** Creates and initializes the Pause Menu.
+     * drawPauseMenu initializes and creates the pause buttons */
     private void drawPauseMenu(Graphics2D g2d){
         Font tmpFont = g2d.getFont();
         Color tmpColor = g2d.getColor();

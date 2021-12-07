@@ -7,9 +7,7 @@ import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 
 
-/**
- *
- */
+/** Characteristics and features for Cement Brick */
 public class CementBrick extends Brick {
 
     private static final String NAME = "Cement Brick";
@@ -21,8 +19,13 @@ public class CementBrick extends Brick {
     private Shape brickFace;
 
 
+    /**
+     * Constructs and initializes the CementBrick and Crack
+     * @param point (x,y) coordinates
+     * @param size Integer values for the brick's height and width
+     */
     public CementBrick(Point point, Dimension size){
-        super(NAME, point, size, DEF_BORDER, DEF_INNER, CEMENT_STRENGTH);
+        super(point, size, DEF_BORDER, DEF_INNER, CEMENT_STRENGTH);
         crack = new Crack(DEF_CRACK_DEPTH, DEF_STEPS, super.getBrickFace());
         brickFace = super.getBrickFace();
     }
@@ -37,6 +40,7 @@ public class CementBrick extends Brick {
         if(!super.isBroken())
             return false;
         super.impact();
+
         if(super.isBroken()){
             crack.makeCrack(point, dir);
             updateBrick();

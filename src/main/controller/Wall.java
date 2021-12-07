@@ -25,6 +25,7 @@ import java.util.Random;
 import java.io.*;
 import javax.swing.*;
 
+
 public class Wall {
 
     private final Random rnd;
@@ -41,6 +42,7 @@ public class Wall {
     private String highScore = "";
     private boolean ballLost;
 
+    /** Constructs and initializes the area for the wall */
     public Wall(Rectangle drawArea, Point ballPos){
 
         this.startPoint = new Point(ballPos);

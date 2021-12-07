@@ -51,17 +51,25 @@ public class DebugPanel extends JPanel {
 
     }
 
+    /**
+     * Initialize panel
+     */
     private void initialize(){
         this.setBackground(DEF_BKG);
         this.setLayout(new GridLayout(2,2));
     }
 
+    /**
+     * Creates a button
+     * @param title Name of the button
+     */
     private JButton makeButton(String title, ActionListener e){
         JButton out = new JButton(title);
         out.addActionListener(e);
         return out;
     }
 
+    /** Creates a slider */
     private JSlider makeSlider(ChangeListener e){
         JSlider out = new JSlider(-4, 4);
         out.setMajorTickSpacing(1);
@@ -71,6 +79,11 @@ public class DebugPanel extends JPanel {
         return out;
     }
 
+    /**
+     * Sets values that determines the speed of the ball
+     * @param x Integer value as speed at the x axis
+     * @param y Integer value as speed at the y axis
+     */
     public void setValues(int x, int y){
         ballXSpeed.setValue(x);
         ballYSpeed.setValue(y);

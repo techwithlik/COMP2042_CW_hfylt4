@@ -25,6 +25,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 
 
+/** The frame that Brick Destroy is played on. */
 public class GameFrame extends JFrame implements WindowFocusListener {
 
     private static final String DEF_TITLE = "Brick Destroy";
@@ -34,6 +35,7 @@ public class GameFrame extends JFrame implements WindowFocusListener {
 
     private boolean gaming;
 
+    /** Constructs a frame for HomeMenu and GameBoard */
     public GameFrame(){
         super();
 
@@ -50,6 +52,9 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.setUndecorated(true);
     }
 
+    /**
+     * Initializes the frame that is created.
+     */
     public void initialize(){
         this.setTitle(DEF_TITLE);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -60,6 +65,9 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.setResizable(false);
     }
 
+    /**
+     * Disposes components on the frame and adds an initialized instance of GameBoard.
+     */
     public void enableGameBoard(){
         this.dispose();
         this.remove(homeMenu);
@@ -70,6 +78,9 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.addWindowFocusListener(this);
     }
 
+    /**
+     * Calculates the centre of the users screen and sets the location of the frame to it.
+     */
     private void autoLocate(){
         Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (size.width - this.getWidth()) / 2;

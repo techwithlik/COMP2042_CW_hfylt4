@@ -19,8 +19,8 @@ Typecasting of Variables,
 Removed disposable parameters, unused fields and imports,
 Enhanced switch cases,
 Break up large classes,
-Organised files into packages,
-Added comments,
+Organised classes into packages,
+Added meaningful javadocs and comments,
 Used the Maven build tool
 
 # Key Additions:

@@ -23,7 +23,6 @@ abstract public class Brick  {
     public static final int RIGHT_IMPACT = 400;
 
     private static Random rnd;
-    private final String name;
     protected Shape brickFace;
 
     private final Color border;
@@ -35,10 +34,17 @@ abstract public class Brick  {
     private boolean broken;
 
 
-    public Brick(String name, Point pos, Dimension size, Color border, Color inner, int strength){
+    /**
+     * Initialize the Brick classes
+     * @param pos Coordinates for the position of the shape
+     * @param size Integer value for the height and width of the shape
+     * @param border Color
+     * @param inner Color
+     * @param strength Strength of the brick
+     */
+    public Brick(Point pos, Dimension size, Color border, Color inner, int strength){
         rnd = new Random();
         broken = false;
-        this.name = name;
 
         // Create brick
         brickFace = makeBrickFace(pos, size);
@@ -48,7 +54,11 @@ abstract public class Brick  {
         this.fullStrength = this.strength = strength;
     }
 
-    // Abstract method for creating the brick
+    /** Creates the shape of a brick.
+     * @param pos (x,y) coordinates for the position of the shape
+     * @param size Integer value for the height and width of the shape
+     * @return the shape of a brick
+     */
     protected abstract Shape makeBrickFace(Point pos, Dimension size);
 
     public  boolean setImpact(Point2D point, int dir){
@@ -69,6 +79,11 @@ abstract public class Brick  {
         return inner;
     }
 
+    /**
+     * Determine where the ball is coming from
+     * @param b A shape from Ball class
+     * @return Integer values
+     */
     public final int findImpact(Ball b){
         if(broken)
             return 0;
@@ -91,15 +106,21 @@ abstract public class Brick  {
         return out;
     }
 
+    /**
+     * Determines whether the entity is broken
+     * @return Boolean
+     */
     public final boolean isBroken(){
         return !broken;
     }
 
+    /** Entity regains its strength when called */
     public void repair() {
         broken = false;
         strength = fullStrength;
     }
 
+    /** Reduces the strength of the entity */
     public void impact(){
         strength--;
         broken = (strength == 0);
@@ -108,14 +129,9 @@ abstract public class Brick  {
     public static Random getRnd() {
         return rnd;
     }
-    public static void setRnd(Random rnd) {
-        Brick.rnd = rnd;
-    }
+
     public Shape getBrickFace(){
         return brickFace;
-    }
-    public void setBrickFace(Shape brickFace) {
-        this.brickFace = brickFace;
     }
 }
 

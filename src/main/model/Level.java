@@ -22,7 +22,14 @@ public class Level {
         this.wall = wall;
     }
 
-    // Generate Level 1 brick only
+    /**
+     * Generate Level 1 brick only
+     * @param drawArea Area that the bricks will be drawn on
+     * @param brickCnt Amount of bricks
+     * @param lineCnt Number of rows of bricks
+     * @param brickSizeRatio A set double value
+     * @return Array of bricks
+     */
     private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio) {
         /*
           If brickCount is not divisible by line count,brickCount is adjusted to the biggest
@@ -64,7 +71,16 @@ public class Level {
 
     }
 
-    // Generate Level 2,3,4,5
+    /**
+     * Generate Level 2, 3, 4, 5 bricks
+     * @param drawArea Area that the bricks will be drawn on
+     * @param brickCnt Amount of bricks
+     * @param lineCnt Number of rows of bricks
+     * @param brickSizeRatio A set double value
+     * @param typeA Brick type
+     * @param typeB Brick type
+     * @return Array of bricks
+     */
     private Brick[] makeChessboardLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int typeA, int typeB) {
         /*
           if brickCount is not divisible by line count,brickCount is adjusted to the biggest
@@ -113,7 +129,14 @@ public class Level {
         return tmp;
     }
 
-    // Call levels after generation
+    /**
+     * Call levels after generation
+     * @param drawArea Area that the bricks will be drawn on
+     * @param brickCount Amount of bricks
+     * @param lineCount Number of rows of bricks
+     * @param brickDimensionRatio Set of double values
+     * @return 2d array linking the level number with the level type
+     */
     public Brick[][] makeLevels(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio) {
         Brick[][] tmp = new Brick[LEVELS_COUNT][];
         tmp[0] = makeSingleTypeLevel(drawArea, brickCount, lineCount, brickDimensionRatio);

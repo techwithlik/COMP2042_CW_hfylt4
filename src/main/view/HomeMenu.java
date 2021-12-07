@@ -28,6 +28,7 @@ import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 
 
+/** Components that make up the Start screen */
 public class HomeMenu extends JComponent implements MouseListener, MouseMotionListener {
 
     private static final String GREETINGS = "Welcome to:";
@@ -80,6 +81,11 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     private boolean backClicked;
     private boolean tutorialClicked;
 
+    /**
+     * Constructs and initializes the Start screen.
+     * @param owner Instance of GameFrame that the component is on
+     * @param area Sets the dimensions of the screen
+     */
     public HomeMenu(GameFrame owner, Dimension area){
 
         this.setFocusable(true);
@@ -112,11 +118,14 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         drawMenu((Graphics2D)g);
     }
 
+    /**
+     * Draws the MenuFace
+     * @param g2d Instance of class Graphics2d that provides information on 2d drawings
+     */
     public void drawMenu(Graphics2D g2d){
 
         if (showTutorial) {
             drawContainer(g2d);
-
             drawButton(g2d);
         }
         else {
@@ -141,6 +150,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         }
     }
 
+    /** Initializes components on which the menuFace will be drawn on. */
     private void drawContainer(Graphics2D g2d){
 
         if(showTutorial)
@@ -170,6 +180,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         g2d.setStroke(tmp);
     }
 
+    /** Initializes the location and draws the text on the menuFace */
     private void drawText(Graphics2D g2d){
 
         g2d.setColor(TEXT_COLOR);
@@ -201,6 +212,9 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         g2d.drawString(CREDITS, sX, sY);
     }
 
+    /**
+     *  Initializes the location and draws the start, exit, tutorial, and back buttons.
+     */
     private void drawButton(Graphics2D g2d){
 
         FontRenderContext frc = g2d.getFontRenderContext();

@@ -5,10 +5,7 @@ import main.controller.Brick;
 import java.awt.*;
 import java.awt.Point;
 
-/**
- * Created by filippo on 04/09/16.
- */
-
+/** Characteristics and features for Clay Brick */
 public class ClayBrick extends Brick {
 
     private static final String NAME = "Clay Brick";
@@ -16,9 +13,13 @@ public class ClayBrick extends Brick {
     private static final Color DEF_BORDER = new Color(170, 170, 170);
     private static final int CLAY_STRENGTH = 1;
 
-
+    /**
+     * Constructs and initializes ClayBrick
+     * @param point (x,y) coordinates
+     * @param size Integer values for the brick's height and width
+     */
     public ClayBrick(Point point, Dimension size){
-        super(NAME, point, size, DEF_BORDER, DEF_INNER, CLAY_STRENGTH);
+        super(point, size, DEF_BORDER, DEF_INNER, CLAY_STRENGTH);
     }
 
     @Override
