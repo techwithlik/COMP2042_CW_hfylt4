@@ -15,29 +15,21 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.Ball;
+package main;
+
+import main.controller.GameFrame;
 
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Point2D;
 
-public class RubberBall extends Ball {
+/**
+ * This is the main class of Brick Destroy game
+ * @author Tan Lik Wei
+ * @version 2.0
+ * @since 27/11/2021
+ */
 
-    private static final int DEF_RADIUS = 12;
-    private static final Color DEF_INNER_COLOR = new Color(255, 219, 88);
-    private static final Color DEF_BORDER_COLOR = DEF_INNER_COLOR.darker().darker();
-
-
-    public RubberBall(Point2D center){
-        super(center, DEF_RADIUS, DEF_RADIUS, DEF_INNER_COLOR, DEF_BORDER_COLOR);
-    }
-
-    @Override
-    protected Shape makeBall(Point2D center, float radiusA, float radiusB) {
-
-        double x = center.getX() - (radiusA / 2);
-        double y = center.getY() - (radiusB / 2);
-
-        return new Ellipse2D.Double(x, y, radiusA, radiusB);
+public class GraphicsMain {
+    public static void main(String[] args){
+        EventQueue.invokeLater(() -> new GameFrame().initialize());
     }
 }

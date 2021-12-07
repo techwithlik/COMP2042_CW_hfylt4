@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added stopwatch function">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="MVC model and reorganising of packages and files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/HighScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow/GraphicsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Ball/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Ball/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/RubberBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Brick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/CementBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/ClayBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/SteelBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BrickFactory/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/DebugWindow/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/DebugWindow/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/GameTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/HighScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GraphicsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MainWindow/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +82,11 @@
   </component>
   <component name="RunManager">
     <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.MainWindow.GraphicsMain" />
+      <option name="MAIN_CLASS_NAME" value="main.GraphicsMain" />
       <module name="Brick_Destroy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.BrickFactory.*" />
+          <option name="PATTERN" value="main.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -319,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638783160086</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Adjusted high score screen">
+      <created>1638799863269</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1638799863269</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,8 +356,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed disposable parameters and unused fields" />
-    <MESSAGE value="Separated Crack from Brick class. Edited README" />
     <MESSAGE value="Added documentation of work done in README" />
     <MESSAGE value="Separated Level from Wall class." />
     <MESSAGE value="Proper spacing and indentation. Added comments" />
@@ -360,6 +379,8 @@
     <MESSAGE value="Encapsulation" />
     <MESSAGE value="Added high scores screen" />
     <MESSAGE value="Added stopwatch function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added stopwatch function" />
+    <MESSAGE value="Adjusted high score screen" />
+    <MESSAGE value="MVC model and reorganising of packages and files" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC model and reorganising of packages and files" />
   </component>
 </project>

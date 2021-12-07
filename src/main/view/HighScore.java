@@ -1,6 +1,6 @@
-package main;
+package main.view;
 
-import main.BrickFactory.Wall;
+import main.controller.Wall;
 
 import javax.swing.*;
 import java.awt.*;

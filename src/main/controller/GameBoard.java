@@ -15,16 +15,14 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.MainWindow;
+package main.controller;
 
-import main.Ball.Ball;
-import main.BrickFactory.Brick;
-import main.BrickFactory.Wall;
-import main.DebugWindow.DebugConsole;
-import main.BrickFactory.Level;
-import main.HighScore;
-import main.Player.Player;
-import main.GameTimer;
+import main.model.Ball;
+import main.view.DebugConsole;
+import main.model.Level;
+import main.view.HighScore;
+import main.model.Player;
+import main.model.GameTimer;
 
 import javax.swing.*;
 import java.awt.*;
@@ -172,7 +170,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         drawBall(wall.ball,g2d);
 
         for(Brick b : wall.bricks)
-            if(!b.isBroken())
+            if(b.isBroken())
                 drawBrick(b, g2d);
 
         drawPlayer(wall.player, g2d);

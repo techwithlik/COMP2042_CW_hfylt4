@@ -1,6 +1,6 @@
-package main.BrickFactory;
+package main.controller;
 
-import main.Ball.Ball;
+import main.model.Ball;
 
 import java.awt.*;
 import java.awt.Point;
@@ -23,9 +23,8 @@ abstract public class Brick  {
     public static final int RIGHT_IMPACT = 400;
 
     private static Random rnd;
-    public Random random;
     private final String name;
-    Shape brickFace;
+    protected Shape brickFace;
 
     private final Color border;
     private final Color inner;
@@ -93,7 +92,7 @@ abstract public class Brick  {
     }
 
     public final boolean isBroken(){
-        return broken;
+        return !broken;
     }
 
     public void repair() {
@@ -106,7 +105,7 @@ abstract public class Brick  {
         broken = (strength == 0);
     }
 
-    static Random getRnd() {
+    public static Random getRnd() {
         return rnd;
     }
     public static void setRnd(Random rnd) {

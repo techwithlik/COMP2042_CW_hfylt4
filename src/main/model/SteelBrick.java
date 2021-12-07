@@ -15,7 +15,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.BrickFactory;
+package main.model;
+
+import main.controller.Brick;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -51,10 +53,10 @@ public class SteelBrick extends Brick {
     }
 
     public boolean setImpact(Point2D point, int dir){
-        if(super.isBroken())
+        if(!super.isBroken())
             return false;
         impact();
-        return super.isBroken();
+        return !super.isBroken();
     }
 
     public void impact(){

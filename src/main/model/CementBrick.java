@@ -1,10 +1,15 @@
-package main.BrickFactory;
+package main.model;
+
+import main.controller.Brick;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 
 
+/**
+ *
+ */
 public class CementBrick extends Brick {
 
     private static final String NAME = "Cement Brick";
@@ -29,10 +34,10 @@ public class CementBrick extends Brick {
 
     @Override
     public boolean setImpact(Point2D point, int dir) {
-        if(super.isBroken())
+        if(!super.isBroken())
             return false;
         super.impact();
-        if(!super.isBroken()){
+        if(super.isBroken()){
             crack.makeCrack(point, dir);
             updateBrick();
             return false;
@@ -46,7 +51,7 @@ public class CementBrick extends Brick {
     }
 
     private void updateBrick(){
-        if(!super.isBroken()){
+        if(super.isBroken()){
             GeneralPath gp = crack.draw();
             gp.append(super.getBrickFace(), false);
             brickFace = gp;

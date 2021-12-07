@@ -1,4 +1,7 @@
-package main.BrickFactory;
+package main.model;
+
+import main.controller.Brick;
+import main.controller.Wall;
 
 import java.awt.*;
 
@@ -117,7 +120,7 @@ public class Level {
         tmp[1] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, CEMENT);
         tmp[2] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, STEEL);
         tmp[3] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, STEEL, CEMENT);
-        tmp[4] = makeChessboardLevel(drawArea, 40, 4, brickDimensionRatio, STEEL, CEMENT);
+        tmp[4] = makeChessboardLevel(drawArea, 40, 4, brickDimensionRatio, CEMENT, STEEL);
         tmp[5] = makeChessboardLevel(drawArea, 50, 5, brickDimensionRatio, STEEL, CEMENT);
 
         return tmp;
