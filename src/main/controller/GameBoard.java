@@ -30,9 +30,7 @@ import java.awt.event.*;
 import java.awt.font.FontRenderContext;
 
 
-/**
- * GameBoard is the panel / label that Brick Destroy is played on.
- */
+/** GameBoard is the panel / label that Brick Destroy is played on. */
 public class GameBoard extends JComponent implements KeyListener, MouseListener, MouseMotionListener {
 
     // Text in Pause Menu
@@ -48,8 +46,6 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     // Game frame size
     private static final int DEF_WIDTH = 600;
     private static final int DEF_HEIGHT = 450;
-
-    private static final Color BG_COLOR = new Color(240, 240, 240); // Light grey
 
     private Timer gameTimer;
     private final GameTimer timer;
@@ -89,7 +85,6 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         menuFont = new Font("Monospaced", Font.PLAIN, TEXT_SIZE);
 
-        /** Initializes the scopes of a frame. */
         this.initialize();
 
         message1 = "Press SPACE to start";
@@ -170,10 +165,10 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         g2d.setColor(Color.RED);
         g2d.drawString(timeMessage,250,200);
-        g2d.setColor(Color.DARK_GRAY);
+        g2d.setColor(Color.WHITE);
         g2d.drawString(message1, 250, 220);
         g2d.drawString(message2, 250, 240);
-        g2d.setColor(Color.GRAY);
+        g2d.setColor(Color.DARK_GRAY);
         g2d.drawString(highScoreMessage, 250, 260);
 
         drawBall(wall.ball,g2d);
@@ -192,11 +187,10 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
     /** Clears the stage or frame it is called into. */
     private void clear(Graphics2D g2d){
-        Color tmp = g2d.getColor();
-        g2d.setColor(BG_COLOR);
-
         g2d.fillRect(0, 0, getWidth(), getHeight());
-        g2d.setColor(tmp);
+
+        Image picture = Toolkit.getDefaultToolkit().getImage("resources/game-bg.gif");
+        g2d.drawImage(picture, 0, 0, this);
     }
 
     /** Initializes and draws a rectangle.

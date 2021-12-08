@@ -24,7 +24,7 @@ import java.awt.geom.Point2D;
 /** Characteristics and features for Rubber Ball */
 public class RubberBall extends Ball {
 
-    private static final int DEF_RADIUS = 12;
+    private static final int DEF_RADIUS = 13;
     private static final Color DEF_INNER_COLOR = new Color(255, 219, 88);
     private static final Color DEF_BORDER_COLOR = DEF_INNER_COLOR.darker().darker();
 

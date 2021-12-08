@@ -74,8 +74,6 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
 
     private final GameFrame owner;
 
-    private final int strLen = 0;
-
     private boolean startClicked;
     private boolean exitClicked;
     private boolean backClicked;

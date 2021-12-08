@@ -23,8 +23,8 @@ import java.awt.*;
 /** Characteristics and features for Player's rectangle */
 public class Player {
 
-    public static final Color BORDER_COLOR = new Color(67, 67, 67); // Grey
-    public static final Color INNER_COLOR = new Color(88, 88, 88); // Grey
+    public static final Color BORDER_COLOR = Color.WHITE;
+    public static final Color INNER_COLOR = Color.WHITE;
 
     private static final int DEF_MOVE_AMOUNT = 5;
 
@@ -110,6 +110,6 @@ public class Player {
      * @param p x and y coordinates.*/
     public void moveTo(Point p){
         ballPoint.setLocation(p);
-        playerFace.setLocation(ballPoint.x - (int)playerFace.getWidth()/2, ballPoint.y);
+        playerFace.setLocation(ballPoint.x - (int)playerFace.getWidth() / 2, ballPoint.y);
     }
 }

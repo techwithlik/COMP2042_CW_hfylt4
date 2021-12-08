@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="MVC model and reorganising of packages and files">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added meaningful javadocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/highscore.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/controller/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Brick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/ClayBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/GameTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/model/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/RubberBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/SteelBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/DebugPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/HighScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/HomeMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638857540073</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added meaningful javadocs">
+      <created>1638887678736</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1638887678736</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +358,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added documentation of work done in README" />
     <MESSAGE value="Separated Level from Wall class." />
     <MESSAGE value="Proper spacing and indentation. Added comments" />
     <MESSAGE value="Changed colours for menu and bricks" />
@@ -389,6 +382,7 @@
     <MESSAGE value="Added stopwatch function" />
     <MESSAGE value="Adjusted high score screen" />
     <MESSAGE value="MVC model and reorganising of packages and files" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC model and reorganising of packages and files" />
+    <MESSAGE value="Added meaningful javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added meaningful javadocs" />
   </component>
 </project>
