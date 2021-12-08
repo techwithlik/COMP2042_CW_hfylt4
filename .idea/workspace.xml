@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added meaningful javadocs">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Upload background gif for during game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/highscore.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/RubberBall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638887678736</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added background gif for during game">
+      <created>1638929429766</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1638929429766</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Upload background gif for during game">
+      <created>1638929483272</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1638929483272</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,8 +367,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Separated Level from Wall class." />
-    <MESSAGE value="Proper spacing and indentation. Added comments" />
     <MESSAGE value="Changed colours for menu and bricks" />
     <MESSAGE value="Added left and right movements using arrow keys" />
     <MESSAGE value="Organised files into packages" />
@@ -383,6 +390,8 @@
     <MESSAGE value="Adjusted high score screen" />
     <MESSAGE value="MVC model and reorganising of packages and files" />
     <MESSAGE value="Added meaningful javadocs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added meaningful javadocs" />
+    <MESSAGE value="Added background gif for during game" />
+    <MESSAGE value="Upload background gif for during game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload background gif for during game" />
   </component>
 </project>
