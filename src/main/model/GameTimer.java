@@ -4,7 +4,7 @@ import java.util.TimerTask;
 import java.util.Timer;
 
 
-/** Timer feature */
+/** This class contains the timer feature */
 public class GameTimer {
 
     private int gameTime;

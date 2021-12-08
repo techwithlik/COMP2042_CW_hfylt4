@@ -1,7 +1,5 @@
 package main.model;
 
-import main.controller.Brick;
-
 import java.awt.*;
 import java.awt.Point;
 
@@ -22,11 +20,21 @@ public class ClayBrick extends Brick {
         super(point, size, DEF_BORDER, DEF_INNER, CLAY_STRENGTH);
     }
 
+    /**
+     * Overrides the makeBrickFace in the parent class
+     * @param pos (x,y) coordinates for the position of the shape
+     * @param size Integer value for the height and width of the brick
+     * @return Return the brick
+     */
     @Override
     protected Shape makeBrickFace(Point pos, Dimension size) {
         return new Rectangle(pos, size);
     }
 
+    /**
+     * Implements the abstract method from the parent class
+     * @return Return Clay Brick
+     */
     @Override
     public Shape getBrick() {
         return super.brickFace;

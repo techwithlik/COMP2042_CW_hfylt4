@@ -24,13 +24,13 @@ import java.awt.geom.Point2D;
 /** Characteristics and features for Rubber Ball */
 public class RubberBall extends Ball {
 
-    private static final int DEF_RADIUS = 13;
+    private static final int DEF_RADIUS = 14;
     private static final Color DEF_INNER_COLOR = new Color(255, 219, 88);
     private static final Color DEF_BORDER_COLOR = DEF_INNER_COLOR.darker().darker();
 
     /**
      * Constructs and initializes the ball entity from the super class.
-     * @param center (x,y) coordinates
+     * @param center (x, y) coordinates
      */
     public RubberBall(Point2D center){
         super(center, DEF_RADIUS, DEF_RADIUS, DEF_INNER_COLOR, DEF_BORDER_COLOR);

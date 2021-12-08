@@ -17,9 +17,10 @@
  */
 package main.view;
 
+import main.controller.DebugPanel;
 import main.model.Ball;
 import main.model.Level;
-import main.controller.Wall;
+import main.model.Wall;
 import main.controller.GameBoard;
 
 import javax.swing.*;

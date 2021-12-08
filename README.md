@@ -2,8 +2,8 @@
 This is Tan Lik Wei's coursework for the COMP2042 Software Maintenance module (2021).
 
 # Brick_Destroy Game Description
-* This is a simple arcade video game. The player's goal is to destroy a wall with a small ball.
-* The game has simple commands:
+This is a simple arcade video game. The player's goal is to destroy a wall with a small ball.
+The game has simple commands:
 * SPACE to start/pause the game,
 * A/Left arrow to move the player to the left,
 * D/Right arrow to move the player to the right,
@@ -12,15 +12,16 @@ This is Tan Lik Wei's coursework for the COMP2042 Software Maintenance module (2
 * The game automatically pauses if the frame loses focus.
 
 # Key changes made for Maintenance:
-* Performed Proper Spacing and Indentation,
-* Fixed access modifiers. Assigned variables to Final and set fields to Private,
-* Typecasting of Variables,
+* Performed proper spacing and indentation,
+* Improved access modifiers. Assigned variables to Final and set fields to Private,
+* Typecasting of variables,
 * Removed disposable parameters, unused fields and imports,
 * Moved declarations from class constructors to inline,
 * Enhanced switch cases,
 * Break up and extracted large classes like Brick and Wall,
 * Organised classes into packages,
 * Added meaningful javadocs and comments,
+* Model-View-Controller pattern, 
 * Used the Maven build tool
 
 # Key Additions:

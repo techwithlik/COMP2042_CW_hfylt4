@@ -1,7 +1,5 @@
 package main.model;
 
-import main.controller.Brick;
-
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
@@ -30,11 +28,24 @@ public class CementBrick extends Brick {
         brickFace = super.getBrickFace();
     }
 
+    /**
+     * Overrides the makeBrickFace in the parent class
+     * @param pos (x,y) coordinates for the position of the shape
+     * @param size Integer value for the height and width of the brick
+     * @return Return the brick
+     */
     @Override
     protected Shape makeBrickFace(Point pos, Dimension size) {
         return new Rectangle(pos, size);
     }
 
+    /**
+     * An overridden method from the parent class.
+     * Responsible for knowing if an impact has occurred or not
+     * @param point Point of impact
+     * @param dir Direction of impact
+     * @return Boolean value
+     */
     @Override
     public boolean setImpact(Point2D point, int dir) {
         if(!super.isBroken())
@@ -49,11 +60,18 @@ public class CementBrick extends Brick {
         return true;
     }
 
+    /**
+     * Implements the abstract method from the parent class
+     * @return Return Cement Brick
+     */
     @Override
     public Shape getBrick() {
         return brickFace;
     }
 
+    /**
+     * A private method that is responsible for updating the Cement Brick if not broken
+     */
     private void updateBrick(){
         if(super.isBroken()){
             GeneralPath gp = crack.draw();
@@ -62,6 +80,10 @@ public class CementBrick extends Brick {
         }
     }
 
+    /**
+     * Method responsible for repairing the Cement Brick
+     * Resets the cracks on the cement bricks by calling the reset method
+     */
     public void repair(){
         super.repair();
         crack.reset();

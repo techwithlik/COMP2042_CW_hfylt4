@@ -15,9 +15,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.view;
+package main.controller;
 
-import main.controller.Wall;
+import main.model.Wall;
 import main.model.Level;
 
 import javax.swing.*;
@@ -26,6 +26,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 
+/** This class handles the implementation of the Debug Panel window */
 public class DebugPanel extends JPanel {
 
     private static final Color DEF_BKG = Color.WHITE;

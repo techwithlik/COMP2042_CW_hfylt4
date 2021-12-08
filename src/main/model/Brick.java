@@ -1,4 +1,4 @@
-package main.controller;
+package main.model;
 
 import main.model.Ball;
 

@@ -5,6 +5,7 @@ import java.awt.geom.Point2D;
 import java.awt.geom.RectangularShape;
 
 
+/** This class makes the ball */
 abstract public class Ball {
 
     private Shape ballFace;

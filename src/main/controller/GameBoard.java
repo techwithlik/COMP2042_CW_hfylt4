@@ -17,12 +17,9 @@
  */
 package main.controller;
 
-import main.model.Ball;
+import main.model.*;
 import main.view.DebugConsole;
-import main.model.Level;
 import main.view.HighScore;
-import main.model.Player;
-import main.model.GameTimer;
 
 import javax.swing.*;
 import java.awt.*;

@@ -17,8 +17,6 @@
  */
 package main.model;
 
-import main.controller.Brick;
-
 import java.awt.*;
 import java.awt.geom.Point2D;
 import java.util.Random;
@@ -47,11 +45,21 @@ public class SteelBrick extends Brick {
         brickFace = super.brickFace;
     }
 
+    /**
+     * Overrides the makeBrickFace in the parent class
+     * @param pos (x,y) coordinates for the position of the shape
+     * @param size Integer value for the height and width of the brick
+     * @return Return the brick
+     */
     @Override
     protected Shape makeBrickFace(Point pos, Dimension size) {
         return new Rectangle(pos, size);
     }
 
+    /**
+     * Implements the abstract method from the parent class.
+     * @return Returns Steel Brick
+     */
     @Override
     public Shape getBrick() {
         return brickFace;

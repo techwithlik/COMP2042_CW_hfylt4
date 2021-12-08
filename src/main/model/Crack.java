@@ -1,11 +1,8 @@
 package main.model;
 
-import main.controller.Brick;
-
 import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
-import java.util.Random;
 
 
 /** Characteristics and features for a crack in a brick */
@@ -13,7 +10,7 @@ public class Crack{
 
     private static final double JUMP_PROBABILITY = 0.7;
 
-    private Shape brickFace;
+    private final Shape brickFace;
 
     public static final int LEFT = 10;
     public static final int RIGHT = 20;
@@ -27,9 +24,6 @@ public class Crack{
 
     private final int steps;
 
-    private Random random;
-    private Brick brick;
-
     /**
      * Constructs and initializes a line through the brickFace.
      * @param crackDepth Integer value for the depth of the crack
@@ -42,7 +36,6 @@ public class Crack{
         this.steps = steps;
 
         this.brickFace = brickFace;
-        random = Brick.getRnd();
     }
 
     /** Determine path
@@ -63,7 +56,6 @@ public class Crack{
      * @param direction Integer value for the direction of the impact
      */
     protected void makeCrack(Point2D point, int direction){
-        Brick brick = null;
         assert false;
         Rectangle bounds = brickFace.getBounds();
 
@@ -126,7 +118,7 @@ public class Crack{
             if(inMiddle(i, steps))
                 y += jumps(jump);
 
-                /** Adds a point to the path by drawing a straight line from the current coordinates
+                /* Adds a point to the path by drawing a straight line from the current coordinates
                 to the new specified coordinates specified in double precision
                  */
             path.lineTo(x, y);

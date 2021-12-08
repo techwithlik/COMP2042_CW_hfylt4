@@ -15,9 +15,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.controller;
-
-import main.model.*;
+package main.model;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -42,7 +40,12 @@ public class Wall {
     private String highScore = "";
     private boolean ballLost;
 
-    /** Constructs and initializes the area for the wall */
+
+    /**
+     * Constructs and initializes the initial implementation for the wall
+     * @param drawArea Rectangular area for the wall
+     * @param ballPos Position for ball
+     */
     public Wall(Rectangle drawArea, Point ballPos){
 
         this.startPoint = new Point(ballPos);
@@ -52,10 +55,10 @@ public class Wall {
 
         rnd = new Random();
 
-        // set ball position
+        // Set ball position
         makeBall(ballPos);
 
-        int speedX = 1, speedY = 1;
+        int speedX, speedY;
         do {
             speedX = rnd.nextInt(6) - 2;
         } while(speedX == 0);
@@ -71,7 +74,7 @@ public class Wall {
 
         if(highScore.equals(""))
         {
-            //initialise high score
+            // Initialise high score
             highScore = this.readHighScore();
         }
     }
@@ -94,9 +97,6 @@ public class Wall {
             ball.reverseY();
         }
         else if(impactWall()){
-            /* for efficiency reverse is done into method impactWall
-            * because for every brick program checks for horizontal and vertical impacts
-            */
             brickCount--;
         }
         // If ball collides with window border
@@ -119,7 +119,7 @@ public class Wall {
     private boolean impactWall(){
         for(Brick b : bricks){
             switch(b.findImpact(ball)) {
-                //Vertical Impact
+                // Vertical Impact
                 case Brick.UP_IMPACT -> {
                     ball.reverseY();
                     playerScore+=50;
@@ -232,6 +232,7 @@ public class Wall {
     public String readHighScore(){
         FileReader readFile;
         BufferedReader reader = null;
+
         try {
             readFile = new FileReader("resources/highscore.dat");
             reader = new BufferedReader(readFile);
@@ -256,7 +257,7 @@ public class Wall {
             return;
         }
         if(playerScore > Integer.parseInt(highScore.split(":")[1])){
-            String name = JOptionPane.showInputDialog("You've created a new high score! What is your name?");
+            String name = JOptionPane.showInputDialog("Congratulations! You have made a new high score! What is your name?");
             highScore = name + ":" + playerScore;
             /*
             .dat file is used so the user cannot edit the highScore
@@ -302,7 +303,4 @@ public class Wall {
         return highScore;
     }
 
-    public void setHighScore(String highScore) {
-        this.highScore = highScore;
-    }
 }

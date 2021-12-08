@@ -1,10 +1,8 @@
 package main.model;
 
-import main.controller.Brick;
-import main.controller.Wall;
-
 import java.awt.*;
 
+/** This class is for constructing in-game levels */
 public class Level {
 
     private static final int LEVELS_COUNT = 6;
@@ -76,9 +74,9 @@ public class Level {
      * @param drawArea Area that the bricks will be drawn on
      * @param brickCnt Amount of bricks
      * @param lineCnt Number of rows of bricks
-     * @param brickSizeRatio A set double value
-     * @param typeA Brick type
-     * @param typeB Brick type
+     * @param brickSizeRatio A set double value indicating the height to width ratio
+     * @param typeA Brick type(Clay, Steel or Cement)
+     * @param typeB Brick type (Clay, Steel or Cement)
      * @return Array of bricks
      */
     private Brick[] makeChessboardLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int typeA, int typeB) {
@@ -149,17 +147,27 @@ public class Level {
         return tmp;
     }
 
-    // Increase level
+    /** Increase level */
     public void nextLevel() {
         wall.setBricks(levels[level++]);
         wall.setBrickCount(wall.getBricks().length);
     }
 
-    // Check if the last level has been reached
+    /**
+     * Check if the last level has been reached
+     * @return Boolean value
+     */
     public boolean hasLevel() {
         return level < levels.length;
     }
 
+    /**
+     * Creates the different types of bricks
+     * @param point Brick position
+     * @param size Brick size
+     * @param type Brick type(Clay, Steel or Cement)
+     * @return Returns the brick
+     */
     private Brick makeBrick(Point point, Dimension size, int type) {
         return switch (type) {
             case CLAY -> new ClayBrick(point, size);

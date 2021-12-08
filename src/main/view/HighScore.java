@@ -1,6 +1,6 @@
 package main.view;
 
-import main.controller.Wall;
+import main.model.Wall;
 
 import javax.swing.*;
 import java.awt.*;
@@ -71,7 +71,7 @@ public class HighScore extends JFrame implements ActionListener {
 
         label4 = new JLabel();
         label4.setText(highScoreRecord);
-        label4.setBounds(200, 170, 100, 50);
+        label4.setBounds(195, 170, 100, 50);
         label4.setForeground(Color.WHITE);
         label4.setFont(new Font(null, Font.PLAIN, 20));
     }
