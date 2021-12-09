@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added Junit tests">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Updated README">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/AudioPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HighScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highscore.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/highscore.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/HighScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HighScore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
     </list>
+    <list id="1479bb7a-3ce1-4e50-9023-3242bba3bfb6" name="Added Junit tests" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,6 +120,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="" />
+      <changelist id="1479bb7a-3ce1-4e50-9023-3242bba3bfb6" name="Added Junit tests" comment="" />
       <created>1637677624502</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -435,7 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639032789482</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added Junit tests">
+      <created>1639042481461</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1639042481529</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Updated README">
+      <created>1639042631856</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1639042631856</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -470,12 +483,12 @@
     <MESSAGE value="Added meaningful javadocs" />
     <MESSAGE value="Added background gif for during game" />
     <MESSAGE value="Upload background gif for during game" />
-    <MESSAGE value="Updated README" />
     <MESSAGE value="Changed to Model-View-Controller and added more javadocs" />
     <MESSAGE value="Changed to Model-View-Controller and added javadocs" />
     <MESSAGE value="Rebuilt project with Maven" />
     <MESSAGE value="Rebuilt project with Maven and edited pom.xml" />
     <MESSAGE value="Added Junit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Junit tests" />
+    <MESSAGE value="Updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README" />
   </component>
 </project>

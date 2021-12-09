@@ -27,6 +27,8 @@ import java.awt.event.MouseMotionListener;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 
+import model.AudioPlayer;
+
 
 /** Components that make up the Start screen */
 public class HomeMenu extends JComponent implements MouseListener, MouseMotionListener {
@@ -51,6 +53,10 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     // Border sizes
     private static final int BORDER_SIZE = 5;
     private static final float[] DASHES = {12, 6};
+
+    // Audio player
+    private boolean audioPlaying;
+    private AudioPlayer audio = new AudioPlayer("src/main/resources/music.wav");
 
     // Start menu buttons
     private final Rectangle menuFace;
@@ -113,6 +119,10 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     }
 
     public void paint(Graphics g){
+        audio.play();
+        audio.loop();
+        audioPlaying=true;
+
         drawMenu((Graphics2D)g);
     }
 
