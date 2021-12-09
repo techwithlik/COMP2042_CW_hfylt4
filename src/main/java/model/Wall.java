@@ -15,7 +15,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.model;
+package model;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -68,7 +68,7 @@ public class Wall {
 
         ball.setSpeed(speedX, speedY);
 
-        player = new Player((Point) ballPos.clone(),150,10, drawArea);
+        player = new Player((Point) ballPos.clone(), 150, 10, drawArea);
 
         area = drawArea;
 
@@ -257,7 +257,7 @@ public class Wall {
             return;
         }
         if(playerScore > Integer.parseInt(highScore.split(":")[1])){
-            String name = JOptionPane.showInputDialog("Congratulations! You have made a new high score! What is your name?");
+            String name = JOptionPane.showInputDialog("Congratulations, you have made a new high score! What is your name?");
             highScore = name + ":" + playerScore;
             /*
             .dat file is used so the user cannot edit the highScore

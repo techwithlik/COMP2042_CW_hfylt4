@@ -1,6 +1,6 @@
-package main.model;
+package model;
 
-import main.model.Ball;
+import model.Ball;
 
 import java.awt.*;
 import java.awt.Point;

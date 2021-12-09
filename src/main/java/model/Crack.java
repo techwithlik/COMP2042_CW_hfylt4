@@ -1,4 +1,4 @@
-package main.model;
+package model;
 
 import java.awt.*;
 import java.awt.geom.GeneralPath;
@@ -106,7 +106,7 @@ public class Crack{
         double h = (end.y - start.y) / (double)steps;
 
         int bound = crackDepth;
-        int jump  = bound * 5;
+        int jump = bound * 5;
 
         double x, y;
 

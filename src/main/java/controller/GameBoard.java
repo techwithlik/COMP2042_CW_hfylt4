@@ -15,11 +15,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.controller;
+package controller;
 
-import main.model.*;
-import main.view.DebugConsole;
-import main.view.HighScore;
+import model.*;
+import view.DebugConsole;
+import view.HighScore;
 
 import javax.swing.*;
 import java.awt.*;
@@ -298,7 +298,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         if(restartButtonRect == null){
             restartButtonRect = (Rectangle) continueButtonRect.clone();
-            restartButtonRect.setLocation(x, y- restartButtonRect.height);
+            restartButtonRect.setLocation(x, y - restartButtonRect.height);
         }
 
         g2d.drawString(RESTART, x, y);

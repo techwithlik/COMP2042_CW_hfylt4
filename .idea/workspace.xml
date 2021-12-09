@@ -4,24 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Changed to Model-View-Controller and added javadocs">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Changed to">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brick_Destroy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Brick_Destroy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maven/Maven.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/highscore.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/ClayBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/GameTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/RubberBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/SteelBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/DebugPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/view/HighScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphicsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controller/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DebugPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controller/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Brick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CementBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClayBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Crack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RubberBall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SteelBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HighScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,8 +56,13 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="21K6qA3P8fy9RnaX0ikkNVhPoSY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,9 +70,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="deletionFromPopupRequiresConfirmation" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -68,7 +89,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lik\IdeaProjects\Brick_Destroy\src\main\java" />
       <recent name="C:\Users\lik\IdeaProjects\Brick_Destroy\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="test.BrickFactory" />
@@ -77,8 +102,19 @@
       <recent name="test.DebugWIndow" />
       <recent name="test.Ball" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.model" />
+      <recent name="main.view" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GraphicsMain (1)">
+    <configuration name="GraphicsMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphicsMain" />
+      <module name="Brick_Destroy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.GraphicsMain" />
       <module name="Brick_Destroy" />
@@ -94,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphicsMain (1)" />
         <item itemvalue="Application.GraphicsMain" />
       </list>
     </recent_temporary>
@@ -373,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638930570863</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Changed to Model-View-Controller and added javadocs">
+      <created>1638946629589</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1638946629589</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

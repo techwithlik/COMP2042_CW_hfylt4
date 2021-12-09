@@ -1,13 +1,13 @@
-package main.view;
+package view;
 
-import main.model.Wall;
+import model.Wall;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 
-/** High score screen */
+/** High score screen for after the game ends */
 public class HighScore extends JFrame implements ActionListener {
 
     private static final int FRAME_WIDTH = 450;
@@ -76,6 +76,7 @@ public class HighScore extends JFrame implements ActionListener {
         label4.setFont(new Font(null, Font.PLAIN, 20));
     }
 
+    /** Create the specified Exit Game button */
     private void createExitGameButton() {
         exitGameButton = new JButton("EXIT GAME");
         exitGameButton.setBounds(125, 230, 200, 30);
@@ -87,6 +88,7 @@ public class HighScore extends JFrame implements ActionListener {
         exitGameButton.addActionListener(this);
     }
 
+    /** Exit the game if exit button was pressed */
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == exitGameButton){

@@ -15,7 +15,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.model;
+package model;
 
 import java.awt.*;
 
@@ -111,5 +111,13 @@ public class Player {
     public void moveTo(Point p){
         ballPoint.setLocation(p);
         playerFace.setLocation(ballPoint.x - (int)playerFace.getWidth() / 2, ballPoint.y);
+    }
+
+    public int getMoveAmount(){
+        return moveAmount;
+    }
+
+    public void setMoveAmount(int moveAmount) {
+        this.moveAmount = moveAmount;
     }
 }

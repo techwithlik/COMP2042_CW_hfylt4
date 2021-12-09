@@ -15,9 +15,9 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.view;
+package view;
 
-import main.controller.GameFrame;
+import controller.GameFrame;
 
 import javax.swing.*;
 import java.awt.*;

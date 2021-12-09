@@ -15,13 +15,13 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.view;
+package view;
 
-import main.controller.DebugPanel;
-import main.model.Ball;
-import main.model.Level;
-import main.model.Wall;
-import main.controller.GameBoard;
+import controller.DebugPanel;
+import model.Ball;
+import model.Level;
+import model.Wall;
+import controller.GameBoard;
 
 import javax.swing.*;
 import java.awt.*;

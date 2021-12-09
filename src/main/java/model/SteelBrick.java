@@ -15,7 +15,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.model;
+package model;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
@@ -29,7 +29,7 @@ public class SteelBrick extends Brick {
     private static final Color DEF_INNER = new Color(55, 55, 55); // Dark Grey
     private static final Color DEF_BORDER = Color.BLACK;
     private static final int STEEL_STRENGTH = 1;
-    private static final double STEEL_PROBABILITY = 0.4;
+    private static final double STEEL_PROBABILITY = 0.5;
 
     private final Random rnd;
     private final Shape brickFace;

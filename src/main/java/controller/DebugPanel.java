@@ -15,10 +15,10 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package main.controller;
+package controller;
 
-import main.model.Wall;
-import main.model.Level;
+import model.Wall;
+import model.Level;
 
 import javax.swing.*;
 import javax.swing.event.ChangeListener;

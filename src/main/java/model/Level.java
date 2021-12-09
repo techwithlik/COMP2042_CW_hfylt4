@@ -1,4 +1,4 @@
-package main.model;
+package model;
 
 import java.awt.*;
 
@@ -165,7 +165,7 @@ public class Level {
      * Creates the different types of bricks
      * @param point Brick position
      * @param size Brick size
-     * @param type Brick type(Clay, Steel or Cement)
+     * @param type Brick type (Clay, Steel or Cement)
      * @return Returns the brick
      */
     private Brick makeBrick(Point point, Dimension size, int type) {
