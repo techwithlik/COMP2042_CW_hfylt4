@@ -234,7 +234,7 @@ public class Wall {
         BufferedReader reader = null;
 
         try {
-            readFile = new FileReader("resources/highscore.dat");
+            readFile = new FileReader("src/main/resources/highscore.dat");
             reader = new BufferedReader(readFile);
             return reader.readLine();
         }

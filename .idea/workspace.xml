@@ -4,33 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Changed to">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Rebuilt project with Maven">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brick_Destroy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Brick_Destroy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Maven/Maven.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphicsMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DebugPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/ClayBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClayBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RubberBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SteelBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HighScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/game-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/game-bg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/gameOver-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gameOver-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highscore.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/start-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/start-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/tutorial-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tutorial-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HighScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +73,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lik\IdeaProjects\Brick_Destroy\src\main\resources" />
+      <recent name="C:\Users\lik\IdeaProjects\Brick_Destroy\src\main" />
       <recent name="C:\Users\lik\IdeaProjects\Brick_Destroy\src\main\java" />
       <recent name="C:\Users\lik\IdeaProjects\Brick_Destroy\resources" />
     </key>
@@ -417,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638946629589</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Rebuilt project with Maven">
+      <created>1639023085172</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1639023085308</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +426,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added comments" />
     <MESSAGE value="Display live score" />
     <MESSAGE value="Replaced background image" />
     <MESSAGE value="Uploaded background image" />
@@ -458,6 +450,7 @@
     <MESSAGE value="Updated README" />
     <MESSAGE value="Changed to Model-View-Controller and added more javadocs" />
     <MESSAGE value="Changed to Model-View-Controller and added javadocs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to Model-View-Controller and added javadocs" />
+    <MESSAGE value="Rebuilt project with Maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebuilt project with Maven" />
   </component>
 </project>

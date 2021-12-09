@@ -28,7 +28,7 @@ public class HighScore extends JFrame implements ActionListener {
         createExitGameButton();
         displayText();
 
-        ImageIcon gameOver = new ImageIcon("resources/gameOver-bg.jpg");
+        ImageIcon gameOver = new ImageIcon("src/main/resources/gameOver-bg.jpg");
         JLabel background = new JLabel(gameOver);
         background.setSize(FRAME_WIDTH, FRAME_HEIGHT);
         background.add(label1);

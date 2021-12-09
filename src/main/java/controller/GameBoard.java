@@ -186,7 +186,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private void clear(Graphics2D g2d){
         g2d.fillRect(0, 0, getWidth(), getHeight());
 
-        Image picture = Toolkit.getDefaultToolkit().getImage("resources/game-bg.gif");
+        Image picture = Toolkit.getDefaultToolkit().getImage("src/main/resources/game-bg.gif");
         g2d.drawImage(picture, 0, 0, this);
     }
 
