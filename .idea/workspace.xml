@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Rebuilt project with Maven">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/game-bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/game-bg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/gameOver-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/gameOver-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/highscore.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highscore.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/start-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/start-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/tutorial-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tutorial-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/HighScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HighScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639023085308</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Rebuilt project with Maven">
+      <created>1639024848961</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1639024849175</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
