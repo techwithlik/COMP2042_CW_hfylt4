@@ -17,12 +17,14 @@ The game has simple commands:
 * Typecasting of variables,
 * Removed disposable parameters, unused fields, methods, and imports,
 * Moved declarations from class constructors to inline,
+* Changed inaccurate variable and method names like MENU_TEXT to EXIT_TEXT,
 * Enhanced switch cases,
 * Break up and extracted large classes like Brick and Wall to apply SOLID principles,
 * Organised classes into packages,
 * Added meaningful javadocs and comments,
 * Model-View-Controller pattern, 
-* Used the Maven build tool
+* Used the Maven build tool,
+* Implemented Junit tests
 
 # Key Additions:
 * Ability to move player's bar left and right using arrow keys,

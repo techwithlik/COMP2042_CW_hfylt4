@@ -79,7 +79,7 @@ public class HighScore extends JFrame implements ActionListener {
     /** Create the specified Exit Game button */
     private void createExitGameButton() {
         exitGameButton = new JButton("EXIT GAME");
-        exitGameButton.setBounds(125, 230, 200, 30);
+        exitGameButton.setBounds(140, 230, 170, 35);
         exitGameButton.setHorizontalTextPosition(JButton.CENTER);
         exitGameButton.setVerticalTextPosition(JButton.CENTER);
         exitGameButton.setBackground(Color.LIGHT_GRAY);
