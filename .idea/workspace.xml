@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Fixed makeSingleTypeLevel method">
+      <change afterPath="$PROJECT_DIR$/src/test/java/controller/GameFrameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/WallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/view/DebugConsoleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Brick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Brick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Wall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/HomeMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HomeMenu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +39,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="21K6qA3P8fy9RnaX0ikkNVhPoSY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -84,6 +86,8 @@
       <recent name="test.Ball" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="view" />
+      <recent name="controller" />
       <recent name="model" />
       <recent name="main.model" />
       <recent name="main.view" />
@@ -125,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637677624502</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Edited variables to 'final' and removed unused libraries. Modified README.">
-      <created>1637983582963</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1637983582963</updated>
     </task>
     <task id="LOCAL-00002" summary="Edited variables to 'final' and did proper indentation. Modified README.">
       <created>1637985311634</created>
@@ -469,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639047187886</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Fixed makeSingleTypeLevel method">
+      <created>1639111389118</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1639111389118</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

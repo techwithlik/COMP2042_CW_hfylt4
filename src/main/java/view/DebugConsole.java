@@ -39,7 +39,6 @@ public class DebugConsole extends JDialog implements WindowListener{
     private final DebugPanel debugPanel;
     private final GameBoard gameBoard;
     private final Wall wall;
-    private final Level level;
 
     /**
      * Constructs and initializes the debug console
@@ -53,10 +52,9 @@ public class DebugConsole extends JDialog implements WindowListener{
         this.wall = wall;
         this.owner = owner;
         this.gameBoard = gameBoard;
-        this.level = level;
         initialize();
 
-        debugPanel = new DebugPanel(wall, this.level);
+        debugPanel = new DebugPanel(wall, level);
         this.add(debugPanel, BorderLayout.CENTER);
 
         this.pack();
