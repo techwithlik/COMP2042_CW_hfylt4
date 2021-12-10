@@ -24,15 +24,17 @@ The game has simple commands:
 * Added meaningful javadocs and comments,
 * Model-View-Controller pattern, 
 * Used the Maven build tool,
-* Implemented Junit tests
+* Implemented Junit tests,
+* Fixed bugs in methods like the makeSingleTypeLevel method
 
 # Key Additions:
 * Ability to move player's bar left and right using arrow keys,
-* A tutorial button that leads to a tutorial screen where information on how to play the game is displayed, along with a back button,
+* A tutorial button that leads to a tutorial screen where information on how to play the game is displayed, along with a back button to return to the home screen,
 * Points system where points are rewarded for bricks destroyed and penalised for losing a ball,
 * See live points scored,
 * High score screen that displays after the game ends and ability to set and store high scores,
 * Stopwatch function,
 * Additional playable levels,
+* Background music,
 * Inserted background images and gifs,
 * Changed colors of elements to improve user interface

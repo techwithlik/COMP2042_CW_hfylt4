@@ -56,7 +56,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
 
     // Audio player
     private boolean audioPlaying;
-    private AudioPlayer audio = new AudioPlayer("src/main/resources/music.wav");
+    private final AudioPlayer audio = new AudioPlayer("src/main/resources/music.wav");
 
     // Start menu buttons
     private final Rectangle menuFace;

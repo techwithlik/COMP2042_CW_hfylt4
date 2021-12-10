@@ -25,10 +25,11 @@ public class Level {
      * @param drawArea Area that the bricks will be drawn on
      * @param brickCnt Amount of bricks
      * @param lineCnt Number of rows of bricks
-     * @param brickSizeRatio A set double value
+     * @param brickSizeRatio A set double value which contains the brick size ratio in comparison to the window
+     * @param type Brick type (Clay, Steel or Cement)
      * @return Array of bricks
      */
-    private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio) {
+    private Brick[] makeSingleTypeLevel(Rectangle drawArea, int brickCnt, int lineCnt, double brickSizeRatio, int type) {
         /*
           If brickCount is not divisible by line count,brickCount is adjusted to the biggest
           multiple of lineCount smaller then brickCount
@@ -63,7 +64,7 @@ public class Level {
         for (double y = brickHgt; i < tmp.length; i++, y += 2 * brickHgt) {
             double x = (brickOnLine * brickLen) - (brickLen / 2);
             p.setLocation(x, y);
-            tmp[i] = new ClayBrick(p, brickSize);
+            tmp[i] = makeBrick(p, brickSize, type);
         }
         return tmp;
 
@@ -75,7 +76,7 @@ public class Level {
      * @param brickCnt Amount of bricks
      * @param lineCnt Number of rows of bricks
      * @param brickSizeRatio A set double value indicating the height to width ratio
-     * @param typeA Brick type(Clay, Steel or Cement)
+     * @param typeA Brick type (Clay, Steel or Cement)
      * @param typeB Brick type (Clay, Steel or Cement)
      * @return Array of bricks
      */
@@ -137,7 +138,7 @@ public class Level {
      */
     public Brick[][] makeLevels(Rectangle drawArea, int brickCount, int lineCount, double brickDimensionRatio) {
         Brick[][] tmp = new Brick[LEVELS_COUNT][];
-        tmp[0] = makeSingleTypeLevel(drawArea, brickCount, lineCount, brickDimensionRatio);
+        tmp[0] = makeSingleTypeLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY);
         tmp[1] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, CEMENT);
         tmp[2] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, CLAY, STEEL);
         tmp[3] = makeChessboardLevel(drawArea, brickCount, lineCount, brickDimensionRatio, STEEL, CEMENT);
