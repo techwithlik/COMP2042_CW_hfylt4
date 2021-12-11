@@ -69,9 +69,10 @@ public class GameBoardController {
                         else
                             gameBoard.getGameTimer().start();
                     break;
+                // Pauses the game and opens Debug Console
                 case KeyEvent.VK_F1:
                     if (keyEvent.isAltDown() && keyEvent.isShiftDown())
-                        gameBoard.getDebugConsole().setVisible(true);  //show debug console
+                        gameBoard.getDebugConsole().setVisible(true);  // Show debug console
                 default:
                     wall.getPlayer().stop();
             }
@@ -168,7 +169,7 @@ public class GameBoardController {
         @Override
         public void mouseMoved(MouseEvent mouseEvent) {
             Point p = mouseEvent.getPoint();
-            if(gameBoard.getExitButtonRect() != null && gameBoard.isShowPauseMenu()) {   // change the cursor the hand
+            if(gameBoard.getExitButtonRect() != null && gameBoard.isShowPauseMenu()) {
                 if (gameBoard.getExitButtonRect().contains(p) || gameBoard.getContinueButtonRect().contains(p) || gameBoard.getRestartButtonRect().contains(p))
                     gameBoard.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 else

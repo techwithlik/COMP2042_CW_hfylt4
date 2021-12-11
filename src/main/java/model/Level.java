@@ -67,7 +67,6 @@ public class Level {
             tmp[i] = makeBrick(p, brickSize, type);
         }
         return tmp;
-
     }
 
     /**

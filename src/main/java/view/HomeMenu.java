@@ -75,8 +75,6 @@ public class HomeMenu extends JComponent {
     private final Font creditsFont;
     private final Font buttonFont;
 
-    private final GameFrame owner;
-
     private boolean startClicked;
     private boolean exitClicked;
     private boolean backClicked;
@@ -91,8 +89,6 @@ public class HomeMenu extends JComponent {
 
         this.setFocusable(true);
         this.requestFocusInWindow();
-
-        this.owner = owner;
 
         menuFace = new Rectangle(new Point(0, 0), area);
         this.setPreferredSize(area);

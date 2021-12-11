@@ -1,6 +1,5 @@
 package controller;
 
-import controller.GameFrame;
 import view.HomeMenu;
 
 import java.awt.*;
@@ -9,8 +8,8 @@ import java.awt.event.MouseMotionListener;
 
 /** This class is used to perform action events, and updates to view class. */
 public class HomeMenuController {
-    private GameFrame gameFrame; // model
-    private HomeMenu homeMenu;  // view
+    private final GameFrame gameFrame; // model
+    private final HomeMenu homeMenu;  // view
 
     /**
      * Construct object and initialise variables.

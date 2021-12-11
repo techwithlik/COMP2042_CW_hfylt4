@@ -35,7 +35,6 @@ public class DebugPanel extends JPanel {
     private JSlider ballYSpeed;
 
     public DebugPanel(Wall wall, Level level){
-
         initialize();
 
         JButton skipLevel = makeButton("Skip Level", e -> level.nextLevel());
@@ -49,12 +48,9 @@ public class DebugPanel extends JPanel {
 
         this.add(ballXSpeed);
         this.add(ballYSpeed);
-
     }
 
-    /**
-     * Initialize panel
-     */
+    /** Initialize panel */
     private void initialize(){
         this.setBackground(DEF_BKG);
         this.setLayout(new GridLayout(2,2));

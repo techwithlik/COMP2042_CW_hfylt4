@@ -28,7 +28,6 @@ public class GameTimer {
         timer.schedule(task, 0, 1000);
     }
 
-
     public int getSeconds() {
         return seconds;
     }

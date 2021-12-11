@@ -303,14 +303,6 @@ public class Wall {
         return highScore;
     }
 
-    public int getBallSpeedX() {
-        return ball.getSpeedX();
-    }
-
-    public int getBallSpeedY() {
-        return ball.getSpeedY();
-    }
-
     public void setBallLost(boolean ballLost) {
         this.ballLost = ballLost;
     }

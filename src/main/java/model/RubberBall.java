@@ -36,12 +36,19 @@ public class RubberBall extends Ball {
         super(center, DEF_RADIUS, DEF_RADIUS, DEF_INNER_COLOR, DEF_BORDER_COLOR);
     }
 
+    /**
+     * Creates the shape of the ball.
+     * @param center (x,y) point of the centre of the ball
+     * @param radiusA The radius of the ball in the x-coordinate
+     * @param radiusB The radius of the ball in the y-coordinate
+     * @return The circle shape of the ball
+     */
     @Override
     protected Shape makeBall(Point2D center, float radiusA, float radiusB) {
-
         double x = center.getX() - (radiusA / 2);
         double y = center.getY() - (radiusB / 2);
 
         return new Ellipse2D.Double(x, y, radiusA, radiusB);
     }
+
 }

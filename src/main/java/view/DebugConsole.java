@@ -102,6 +102,10 @@ public class DebugConsole extends JDialog implements WindowListener{
 
     }
 
+    /**
+     * This is a built-in method for if the Window becomes the active Window.
+     * @param windowEvent indicates that a window has changed its status
+     */
     @Override
     public void windowActivated(WindowEvent windowEvent) {
         setLocation();

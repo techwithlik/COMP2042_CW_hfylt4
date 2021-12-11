@@ -169,7 +169,6 @@ public class Crack{
      * @return (x,y) coordinates of a random end point
      */
     private Point makeRandomPoint(Point from, Point to, int direction){
-
         Point out = new Point();
         int pos;
 

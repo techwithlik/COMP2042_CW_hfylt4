@@ -140,14 +140,13 @@ public class GameBoard extends JComponent{
                     wall.setPlayerScore(0);
                 }
             }
-
             repaint();
         });
     }
 
     // Set up screen and listens for keyboard and mouse input
     private void initialize(){
-        // set window size
+        // Set window size
         this.setPreferredSize(new Dimension(DEF_WIDTH, DEF_HEIGHT));
         this.setFocusable(true);
         this.requestFocusInWindow();
@@ -317,8 +316,8 @@ public class GameBoard extends JComponent{
         g2d.setFont(tmpFont);
         g2d.setColor(tmpColor);
     }
-    
-    // Pause game timer when paused or interrupted
+
+    /** This method pauses the game and returns a message once focus is lost. */
     public void onLostFocus(){
         gameTimer.stop();
         timer.setGaming(false);
@@ -367,9 +366,7 @@ public class GameBoard extends JComponent{
         this.showPauseMenu = showPauseMenu;
     }
 
-    /**
-     * Used to set message.
-     */
+    /** Used to set message */
     public void setMessage1() {
         this.message1 = message1;
     }

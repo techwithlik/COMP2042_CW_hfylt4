@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
+/** Class to play background music */
 public class AudioPlayer {
     public boolean muteAudio;
     private final Clip clip;
@@ -38,9 +39,9 @@ public class AudioPlayer {
             e.printStackTrace();
             throw new RuntimeException("Sound: Line Unavailable Exception Error: " + e);
         }
+    }
 
     // Play the sound clip
-    }
     public void play(){
         if (!muteAudio){
             clip.setFramePosition(0);  // Resets to the beginning of the clip

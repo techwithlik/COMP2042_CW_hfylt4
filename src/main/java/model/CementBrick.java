@@ -69,9 +69,7 @@ public class CementBrick extends Brick {
         return brickFace;
     }
 
-    /**
-     * A private method that is responsible for updating the Cement Brick if not broken
-     */
+    /** A private method that is responsible for updating the Cement Brick if not broken */
     private void updateBrick(){
         if(super.isBroken()){
             GeneralPath gp = crack.draw();

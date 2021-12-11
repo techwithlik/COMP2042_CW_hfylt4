@@ -26,7 +26,6 @@ abstract public class Brick  {
 
     private boolean broken;
 
-
     /**
      * Initialize the Brick classes
      * @param pos Coordinates for the position of the shape

@@ -54,9 +54,7 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.setUndecorated(true);
     }
 
-    /**
-     * Initializes the frame that is created.
-     */
+    /** Initializes the frame that is created. */
     public void initialize(){
         this.setTitle(DEF_TITLE);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -67,9 +65,7 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.setResizable(false);
     }
 
-    /**
-     * Disposes components on the frame and adds an initialized instance of GameBoard.
-     */
+    /** Disposes components on the frame and adds an initialized instance of GameBoard */
     public void enableGameBoard(){
         this.dispose();
         this.remove(homeMenu);
@@ -80,9 +76,7 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.addWindowFocusListener(this);
     }
 
-    /**
-     * Calculates the centre of the users screen and sets the location of the frame to it.
-     */
+    /** Calculates the centre of the users screen and sets the location of the frame. */
     private void autoLocate(){
         Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
         int x = (size.width - this.getWidth()) / 2;
@@ -90,20 +84,27 @@ public class GameFrame extends JFrame implements WindowFocusListener {
         this.setLocation(x, y);
     }
 
-
+    /**
+     * Built-in method to determine if the Game window is open on screen.
+     * @param windowEvent indicates that a window has changed its status
+     */
     @Override
     public void windowGainedFocus(WindowEvent windowEvent) {
         /*
             the first time the frame loses focus is because
             it has been disposed to install the GameBoard,
-            so went it regains the focus it's ready to play.
-            of course calling a method such as 'onLostFocus'
+            so once it regains the focus it's ready to play.
+            calling a method such as 'onLostFocus'
             is useful only if the GameBoard as been displayed
             at least once
          */
         gaming = true;
     }
 
+    /**
+     * Built-in method to determine if the Game window is hidden from screen.
+     * @param windowEvent indicates that a window has changed its status
+     */
     @Override
     public void windowLostFocus(WindowEvent windowEvent) {
         if(gaming)

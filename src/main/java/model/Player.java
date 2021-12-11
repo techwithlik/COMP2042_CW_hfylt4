@@ -34,7 +34,6 @@ public class Player {
     private final int min;
     private final int max;
 
-
     /**
      * Constructs and initializes the player's rectangle
      * @param ballPoint Set of coordinates
@@ -107,7 +106,8 @@ public class Player {
 
     /**
      * Moves the player to a location
-     * @param p x and y coordinates.*/
+     * @param p x and y coordinates.
+     * */
     public void moveTo(Point p){
         ballPoint.setLocation(p);
         playerFace.setLocation(ballPoint.x - (int)playerFace.getWidth() / 2, ballPoint.y);
