@@ -22,7 +22,7 @@ The game has simple commands:
 * Break up and extracted large classes like Brick and Wall to apply SOLID principles,
 * Organised classes into packages,
 * Added meaningful javadocs and comments,
-* Model-View-Controller pattern, 
+* Model-View-Controller design pattern, 
 * Used the Maven build tool,
 * Implemented Junit tests,
 * Fixed bugs in methods like the makeSingleTypeLevel method

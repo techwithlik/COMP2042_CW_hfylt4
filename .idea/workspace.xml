@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Fixed makeSingleTypeLevel method">
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/GameFrameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/WallTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/view/DebugConsoleTest.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added more Junit tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Brick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Brick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Wall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/HomeMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HomeMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/WallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/WallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/view/DebugConsoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/DebugConsoleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/DebugConsole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/DebugConsole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/WallTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/WallTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,11 +80,11 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="view" />
       <recent name="test.BrickFactory" />
       <recent name="test.Player" />
       <recent name="test.MainWindow" />
       <recent name="test.DebugWIndow" />
-      <recent name="test.Ball" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="view" />
@@ -93,31 +94,81 @@
       <recent name="main.view" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GraphicsMain (1)">
-    <configuration name="GraphicsMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.GraphicsMain">
+    <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GraphicsMain" />
       <module name="Brick_Destroy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.GraphicsMain" />
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Brick_Destroy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.model.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RubberBallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Brick_Destroy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.RubberBallTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SteelBrickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Brick_Destroy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.SteelBrickTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Brick_Destroy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.WallTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GraphicsMain (1)" />
         <item itemvalue="Application.GraphicsMain" />
+        <item itemvalue="JUnit.SteelBrickTest" />
+        <item itemvalue="JUnit.WallTest" />
+        <item itemvalue="JUnit.RubberBallTest" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -129,13 +180,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637677624502</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Edited variables to 'final' and did proper indentation. Modified README.">
-      <created>1637985311634</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1637985311634</updated>
     </task>
     <task id="LOCAL-00003" summary="Edited variables to 'final', did proper indentation, and removed unused libraries. Modified README.">
       <created>1637985422200</created>
@@ -473,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639111389118</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Added more Junit tests">
+      <created>1639116725063</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1639116725063</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Tutorial Screen, Tutorial and Back Buttons" />
     <MESSAGE value="Change cursor when hover over newly added buttons" />
     <MESSAGE value="Renaming of package 'test'" />
     <MESSAGE value="Amended Tutorial Screen" />
@@ -514,6 +564,7 @@
     <MESSAGE value="Updated README" />
     <MESSAGE value="Added background music" />
     <MESSAGE value="Fixed makeSingleTypeLevel method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed makeSingleTypeLevel method" />
+    <MESSAGE value="Added more Junit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more Junit tests" />
   </component>
 </project>

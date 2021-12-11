@@ -17,6 +17,7 @@
  */
 package controller;
 
+import view.GameBoard;
 import view.HomeMenu;
 
 import javax.swing.*;

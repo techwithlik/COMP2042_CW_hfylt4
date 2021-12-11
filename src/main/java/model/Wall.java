@@ -314,4 +314,8 @@ public class Wall {
     public void setBallLost(boolean ballLost) {
         this.ballLost = ballLost;
     }
+
+    public Player getPlayer() {
+        return player;
+    }
 }

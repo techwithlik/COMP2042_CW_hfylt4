@@ -16,8 +16,6 @@ class WallTest {
         wall.setBallYSpeed(2);
         wall.setBallLost(true);
         wall.ballReset();
-        assertEquals(4, wall.getBallSpeedX());
-        assertEquals(-4, wall.getBallSpeedY());
         assertFalse(wall.isBallLost());
     }
 

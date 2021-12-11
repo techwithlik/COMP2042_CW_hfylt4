@@ -21,7 +21,6 @@ import controller.DebugPanel;
 import model.Ball;
 import model.Level;
 import model.Wall;
-import controller.GameBoard;
 
 import javax.swing.*;
 import java.awt.*;

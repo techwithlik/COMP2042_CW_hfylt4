@@ -15,20 +15,21 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package controller;
+package view;
 
+import controller.GameBoardController;
 import model.*;
-import view.DebugConsole;
-import view.HighScore;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.awt.font.FontRenderContext;
 
 
 /** GameBoard is the panel / label that Brick Destroy is played on. */
-public class GameBoard extends JComponent implements KeyListener, MouseListener, MouseMotionListener {
+public class GameBoard extends JComponent{
 
     // Text in Pause Menu
     private static final String CONTINUE = "Continue";
@@ -45,7 +46,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
     private static final int DEF_HEIGHT = 450;
 
     private Timer gameTimer;
-    private final GameTimer timer;
+    public GameTimer timer;
 
     private final Wall wall;
     private final Level level;
@@ -94,6 +95,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         timer = new GameTimer();
 
+        GameBoardController gameBoardController = new GameBoardController(wall, this);
         debugConsole = new DebugConsole(owner, wall, this, level);
 
         // Initialize the first level
@@ -149,9 +151,6 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         this.setPreferredSize(new Dimension(DEF_WIDTH, DEF_HEIGHT));
         this.setFocusable(true);
         this.requestFocusInWindow();
-        this.addKeyListener(this);
-        this.addMouseListener(this);
-        this.addMouseMotionListener(this);
     }
 
     /** Renders the wall, ball, player, and brick drawings */
@@ -264,8 +263,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setColor(tmpColor);
     }
 
-    /** Creates and initializes the Pause Menu.
-     * drawPauseMenu initializes and creates the pause buttons */
+    /** Creates and initializes the Pause Menu */
     private void drawPauseMenu(Graphics2D g2d){
         Font tmpFont = g2d.getFont();
         Color tmpColor = g2d.getColor();
@@ -273,6 +271,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setFont(menuFont);
         g2d.setColor(MENU_COLOR);
 
+        // Display the Pause Menu title
         if(strLen == 0){
             FontRenderContext frc = g2d.getFontRenderContext();
             strLen = menuFont.getStringBounds(PAUSE, frc).getBounds().width;
@@ -286,6 +285,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         x = this.getWidth() / 8;
         y = this.getHeight() / 5;
 
+        // Display the Continue button
         if(continueButtonRect == null){
             FontRenderContext frc = g2d.getFontRenderContext();
             continueButtonRect = menuFont.getStringBounds(CONTINUE, frc).getBounds();
@@ -296,6 +296,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         y *= 2;
 
+        // Display the Restart button
         if(restartButtonRect == null){
             restartButtonRect = (Rectangle) continueButtonRect.clone();
             restartButtonRect.setLocation(x, y - restartButtonRect.height);
@@ -305,6 +306,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
 
         y *= 1.5;
 
+        // Display the Exit button
         if(exitButtonRect == null){
             exitButtonRect = (Rectangle) continueButtonRect.clone();
             exitButtonRect.setLocation(x, y - exitButtonRect.height);
@@ -315,122 +317,7 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         g2d.setFont(tmpFont);
         g2d.setColor(tmpColor);
     }
-
-    @Override
-    public void keyTyped(KeyEvent keyEvent) {
-    }
-
-    // Detect key pressed
-    @Override
-    public void keyPressed(KeyEvent keyEvent) {
-        switch(keyEvent.getKeyCode()){
-            // Moves player to the left if A or Left arrow button was pressed
-            case KeyEvent.VK_A:
-            case KeyEvent.VK_LEFT:
-                wall.player.moveLeft();
-                break;
-            // Moves player to the right if D or Right arrow button is pressed
-            case KeyEvent.VK_D:
-            case KeyEvent.VK_RIGHT:
-                wall.player.moveRight();
-                break;
-            // Pauses the game and shows pause menu if Escape button is pressed
-            case KeyEvent.VK_ESCAPE:
-                showPauseMenu = !showPauseMenu;
-                timer.setGaming(false);
-                repaint();
-                gameTimer.stop();
-                break;
-            // Pauses the game if Space button is pressed
-            case KeyEvent.VK_SPACE:
-                if(!showPauseMenu)
-                    if(gameTimer.isRunning()) {
-                        gameTimer.stop();
-                        timer.setGaming(false);
-                    }
-                    else
-                        gameTimer.start();
-                break;
-            // Show Debug Panel
-            case KeyEvent.VK_F1:
-                if(keyEvent.isAltDown() && keyEvent.isShiftDown())
-                    debugConsole.setVisible(true);
-            default:
-                wall.player.stop();
-        }
-    }
-
-    @Override
-    public void keyReleased(KeyEvent keyEvent) {
-        wall.player.stop();
-    }
-
-    // Checks if mouse is clicked
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        Point p = mouseEvent.getPoint();
-        if(!showPauseMenu)
-            return;
-        if(continueButtonRect.contains(p)){
-            showPauseMenu = false;
-            repaint();
-        }
-        else if(restartButtonRect.contains(p)){
-            message1 = "Restarting Game...";
-            message2 = "Press SPACE to Start.";
-            timer.resetTimer();
-            wall.ballReset();
-            wall.setPlayerScore(0);
-            wall.wallReset();
-            showPauseMenu = false;
-            repaint();
-        }
-        else if(exitButtonRect.contains(p)){
-            System.exit(0);
-        }
-
-    }
-
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-
-    }
-
-    // Checks if mouse is moved
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        Point p = mouseEvent.getPoint();
-        if(exitButtonRect != null && showPauseMenu) {
-            if (exitButtonRect.contains(p) || continueButtonRect.contains(p) || restartButtonRect.contains(p))
-                this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-            else
-                this.setCursor(Cursor.getDefaultCursor());
-        }
-        else{
-            this.setCursor(Cursor.getDefaultCursor());
-        }
-    }
-
+    
     // Pause game timer when paused or interrupted
     public void onLostFocus(){
         gameTimer.stop();
@@ -438,5 +325,96 @@ public class GameBoard extends JComponent implements KeyListener, MouseListener,
         message1 = "Focus Lost";
         message2 = "";
         repaint();
+    }
+
+    /**
+     * Check if showPauseMenu is true or false.
+     * @return true or false
+     */
+    public boolean isShowPauseMenu() {
+        return showPauseMenu;
+    }
+
+    /**
+     * Get the reaction for Continue button.
+     * @return continueButtonRect
+     */
+    public Rectangle getContinueButtonRect() {
+        return continueButtonRect;
+    }
+
+    /**
+     * Get the reaction for Exit button.
+     * @return exitButtonRect
+     */
+    public Rectangle getExitButtonRect() {
+        return exitButtonRect;
+    }
+
+    /**
+     * Get the reaction for Restart button.
+     * @return restartButtonRect
+     */
+    public Rectangle getRestartButtonRect() {
+        return restartButtonRect;
+    }
+
+    /**
+     * Set showPauseMenu to true or false.
+     * @param showPauseMenu represents true or false
+     */
+    public void setShowPauseMenu(boolean showPauseMenu) {
+        this.showPauseMenu = showPauseMenu;
+    }
+
+    /**
+     * Used to set message.
+     * @param message represents message
+     */
+    public void setMessage1(String message) {
+        this.message1 = message1;
+    }
+    public void setMessage2(String message) {
+        this.message2 = message2;
+    }
+
+    /**
+     * When user pressed on any key.
+     * @param keyEvent represents keyboard event
+     */
+    public void AddKeyEvent(KeyListener keyEvent){
+        this.addKeyListener(keyEvent);
+    }
+
+    /**
+     * When user performs mouse click
+     * @param mouseEvent represents mouse event
+     */
+    public void AddMouseListener(MouseListener mouseEvent){
+        this.addMouseListener(mouseEvent);
+    }
+
+    /**
+     * When user moves their mouse
+     * @param mouseEvent listen for mouse motion event
+     */
+    public void AddMouseMotionListener(MouseMotionListener mouseEvent){
+        this.addMouseMotionListener(mouseEvent);
+    }
+
+    /**
+     * Get game timer
+     * @return game timer
+     */
+    public Timer getGameTimer(){
+        return gameTimer;
+    }
+
+    /**
+     * Get Debug Console
+     * @return debugConsole
+     */
+    public DebugConsole getDebugConsole(){
+        return debugConsole;
     }
 }

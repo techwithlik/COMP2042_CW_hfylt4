@@ -1,6 +1,5 @@
 package view;
 
-import controller.GameBoard;
 import model.Level;
 import model.Wall;
 import org.junit.jupiter.api.Test;
