@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added more Junit tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoardController.java" afterDir="false" />
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="MVC design pattern for GameBoard">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/HomeMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/WallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/WallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/view/DebugConsoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/view/DebugConsoleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/DebugConsole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/DebugConsole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/model/WallTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/WallTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GameBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GameBoardController$inputEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GameBoardController$inputEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GameFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GameFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Wall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/HomeMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HomeMenu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637677624502</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Edited variables to 'final', did proper indentation, and removed unused libraries. Modified README.">
-      <created>1637985422200</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1637985422200</updated>
     </task>
     <task id="LOCAL-00004" summary="Did proper indentation">
       <created>1638028305066</created>
@@ -524,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639116725063</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="MVC design pattern for GameBoard">
+      <created>1639190214657</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1639190214841</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +541,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change cursor when hover over newly added buttons" />
     <MESSAGE value="Renaming of package 'test'" />
     <MESSAGE value="Amended Tutorial Screen" />
     <MESSAGE value="Used Maven Build Tool" />
@@ -565,6 +565,7 @@
     <MESSAGE value="Added background music" />
     <MESSAGE value="Fixed makeSingleTypeLevel method" />
     <MESSAGE value="Added more Junit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more Junit tests" />
+    <MESSAGE value="MVC design pattern for GameBoard" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVC design pattern for GameBoard" />
   </component>
 </project>

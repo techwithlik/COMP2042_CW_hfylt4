@@ -100,8 +100,8 @@ public class GameBoardController {
                 gameBoard.repaint();
             }
             else if(gameBoard.getRestartButtonRect().contains(p)){
-                gameBoard.setMessage1("Restarting Game...");
-                gameBoard.setMessage2("Press SPACE to Start.");
+                gameBoard.setMessage1();
+                gameBoard.setMessage2();
                 gameBoard.timer.resetTimer();
                 wall.ballReset();
                 wall.setPlayerScore(0);

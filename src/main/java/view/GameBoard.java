@@ -322,8 +322,8 @@ public class GameBoard extends JComponent{
     public void onLostFocus(){
         gameTimer.stop();
         timer.setGaming(false);
-        message1 = "Focus Lost";
-        message2 = "";
+        message1 = "Focus Lost.";
+        message2 = "Press SPACE to resume.";
         repaint();
     }
 
@@ -369,12 +369,11 @@ public class GameBoard extends JComponent{
 
     /**
      * Used to set message.
-     * @param message represents message
      */
-    public void setMessage1(String message) {
+    public void setMessage1() {
         this.message1 = message1;
     }
-    public void setMessage2(String message) {
+    public void setMessage2() {
         this.message2 = message2;
     }
 

@@ -21,7 +21,6 @@ import controller.GameFrame;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.font.FontRenderContext;
@@ -31,7 +30,7 @@ import model.AudioPlayer;
 
 
 /** Components that make up the Start screen */
-public class HomeMenu extends JComponent implements MouseListener, MouseMotionListener {
+public class HomeMenu extends JComponent {
 
     private static final String GREETINGS = "Welcome to:";
     private static final String GAME_TITLE = "Brick Destroy";
@@ -54,8 +53,6 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     private static final int BORDER_SIZE = 5;
     private static final float[] DASHES = {12, 6};
 
-    // Audio player
-    private boolean audioPlaying;
     private final AudioPlayer audio = new AudioPlayer("src/main/resources/music.wav");
 
     // Start menu buttons
@@ -95,9 +92,6 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         this.setFocusable(true);
         this.requestFocusInWindow();
 
-        this.addMouseListener(this);
-        this.addMouseMotionListener(this);
-
         this.owner = owner;
 
         menuFace = new Rectangle(new Point(0, 0), area);
@@ -121,7 +115,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
     public void paint(Graphics g){
         audio.play();
         audio.loop();
-        audioPlaying=true;
+        // Audio player
 
         drawMenu((Graphics2D)g);
     }
@@ -220,9 +214,7 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         g2d.drawString(CREDITS, sX, sY);
     }
 
-    /**
-     *  Initializes the location and draws the start, exit, tutorial, and back buttons.
-     */
+    /** Initializes the location and draws the start, exit, tutorial, and back buttons. */
     private void drawButton(Graphics2D g2d){
 
         FontRenderContext frc = g2d.getFontRenderContext();
@@ -334,86 +326,133 @@ public class HomeMenu extends JComponent implements MouseListener, MouseMotionLi
         }
     }
 
-    @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-        Point p = mouseEvent.getPoint();
-
-        if(startButton.contains(p)){
-           owner.enableGameBoard();
-        }
-        else if(exitButton.contains(p)){
-            System.out.println("Goodbye " + System.getProperty("user.name"));
-            System.exit(0);
-        }
-        else if(tutorialButton.contains(p)){
-            tutorialClicked = true;
-            showTutorial = true;
-            repaint();
-        }
-        else if(backButton.contains(p)){
-            backClicked = true;
-            showTutorial = false;
-            repaint();
-        }
+    /**
+     * Display actions perform when user mouse clicked.
+     * @param mouseEvent represents mouse event
+     */
+    public void addMouseEvent(MouseListener mouseEvent) {
+        this.addMouseListener(mouseEvent);
     }
 
-    @Override
-    public void mousePressed(MouseEvent mouseEvent) {
-        Point p = mouseEvent.getPoint();
-        if(startButton.contains(p)){
-            startClicked = true;
-            repaint(startButton.x, startButton.y, startButton.width + 1, startButton.height + 1);
-
-        }
-        else if(exitButton.contains(p)){
-            exitClicked = true;
-            repaint(exitButton.x, exitButton.y, exitButton.width + 1, exitButton.height + 1);
-        }
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent mouseEvent) {
-        if(startClicked ){
-            startClicked = false;
-            repaint(startButton.x, startButton.y, startButton.width + 1, startButton.height + 1);
-        }
-        else if(exitClicked){
-            exitClicked = false;
-            repaint(exitButton.x, exitButton.y, exitButton.width + 1, exitButton.height + 1);
-        }
-        else if(tutorialClicked){
-            tutorialClicked = false;
-            repaint(tutorialButton.x, tutorialButton.y, tutorialButton.width + 1, tutorialButton.height + 1);
-        }
-        else if(backClicked){
-            backClicked = false;
-            repaint(backButton.x, backButton.y, backButton.width + 1, backButton.height + 1);
-        }
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-
+    /**
+     * Display actions perform when user moving their mouse.
+     * @param mouseEvent represents mouse event
+     */
+    public void AddMouseMotionListener(MouseMotionListener mouseEvent) {
+        this.addMouseMotionListener(mouseEvent);
     }
 
 
-    @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-
+    /**
+     * Design buttons when button is clicked.
+     * @param button represents button
+     */
+    public void Repaint(Rectangle button){
+        repaint(button.x, button.y, button.width + 1, button.height + 1);
     }
 
-    @Override
-    public void mouseMoved(MouseEvent mouseEvent) {
-        Point p = mouseEvent.getPoint();
+    /**
+     * Get start button.
+     * @return represents start button
+     */
+    public Rectangle getStartButton() {
+        return startButton;
+    }
 
-        if(startButton.contains(p) || exitButton.contains(p) || tutorialButton.contains(p) || backButton.contains(p))
-            this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        else
-            this.setCursor(Cursor.getDefaultCursor());
+    /**
+     * Check if the start button is clicked.
+     * @return true if start button is clicked
+     */
+    public boolean isStartClicked() {
+        return startClicked;
+    }
+
+    /**
+     * Set the start button to true if the button is clicked.
+     * @param startClicked represents start button action
+     */
+    public void setStartClicked(boolean startClicked) {
+        this.startClicked = startClicked;
+    }
+
+
+    /**
+     * Get exit button
+     * @return represents exit button
+     */
+    public Rectangle getExitButton() {
+        return exitButton;
+    }
+
+    /**
+     * Get if the exit button is clicked.
+     * @return true if exit button is clicked
+     */
+    public boolean isExitClicked() {
+        return exitClicked;
+    }
+
+    /**
+     * Set the exit button to true if the button is clicked.
+     * @param exitClicked represents exit button action
+     */
+    public void setExitClicked(boolean exitClicked) {
+        this.exitClicked = exitClicked;
+    }
+
+    /**
+     * Get tutorial button.
+     * @return represents tutorial button
+     */
+    public Rectangle getTutorialButton() {
+        return tutorialButton;
+    }
+
+    /**
+     * Check if the tutorial button is clicked.
+     * @return true if tutorial button is clicked
+     */
+    public boolean isTutorialClicked() {
+        return tutorialClicked;
+    }
+
+    /**
+     * Set the Tutorial button to true if the tutorial button is clicked.
+     * @param tutorialClicked represents start button action
+     */
+    public void setTutorialClicked(boolean tutorialClicked) {
+        this.tutorialClicked = tutorialClicked;
+    }
+
+    /**
+     * Get Back button.
+     * @return represents Back button
+     */
+    public Rectangle getBackButton() {
+        return backButton;
+    }
+
+    /**
+     * Check if the Back button is clicked.
+     * @return true if Back button is clicked
+     */
+    public boolean isBackClicked() {
+        return backClicked;
+    }
+
+    /**
+     * Set the Back button to true if the button is clicked.
+     * @param backClicked represents Back button action
+     */
+    public void setBackClicked(boolean backClicked) {
+        this.backClicked = backClicked;
+    }
+
+    /**
+     * Set the Tutorial to true or false.
+     * @param showTutorial Boolean that represents display of tutorial screen
+     */
+    public void setShowTutorial(boolean showTutorial) {
+        this.showTutorial = showTutorial;
     }
 }
