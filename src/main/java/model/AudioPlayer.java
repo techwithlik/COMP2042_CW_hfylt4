@@ -3,9 +3,8 @@ package model;
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 
-/** Class to play background music */
+/** Class to play audio for the background music */
 public class AudioPlayer {
     public boolean muteAudio;
     private final Clip clip;
@@ -22,10 +21,6 @@ public class AudioPlayer {
             else {
                 throw new RuntimeException("Sound: file not found: " + fileName);
             }
-        }
-        catch (MalformedURLException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Sound: Malformed URL: " + e);
         }
         catch (UnsupportedAudioFileException e) {
             e.printStackTrace();

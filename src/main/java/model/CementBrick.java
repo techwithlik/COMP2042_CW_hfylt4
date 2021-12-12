@@ -13,7 +13,7 @@ public class CementBrick extends Brick {
     private static final Color DEF_BORDER = new Color(95, 95, 95); // Dark Grey
     private static final int CEMENT_STRENGTH = 2;
 
-    private final Crack crack;
+    private final BrickCrack brickCrack;
     private Shape brickFace;
 
 
@@ -24,7 +24,7 @@ public class CementBrick extends Brick {
      */
     public CementBrick(Point point, Dimension size){
         super(point, size, DEF_BORDER, DEF_INNER, CEMENT_STRENGTH);
-        crack = new Crack(DEF_CRACK_DEPTH, DEF_STEPS, super.getBrickFace());
+        brickCrack = new BrickCrack(DEF_CRACK_DEPTH, DEF_STEPS, super.getBrickFace());
         brickFace = super.getBrickFace();
     }
 
@@ -53,7 +53,7 @@ public class CementBrick extends Brick {
         super.impact();
 
         if(super.isBroken()){
-            crack.makeCrack(point, dir);
+            brickCrack.makeCrack(point, dir);
             updateBrick();
             return false;
         }
@@ -72,7 +72,7 @@ public class CementBrick extends Brick {
     /** A private method that is responsible for updating the Cement Brick if not broken */
     private void updateBrick(){
         if(super.isBroken()){
-            GeneralPath gp = crack.draw();
+            GeneralPath gp = brickCrack.draw();
             gp.append(super.getBrickFace(), false);
             brickFace = gp;
         }
@@ -84,7 +84,7 @@ public class CementBrick extends Brick {
      */
     public void repair(){
         super.repair();
-        crack.reset();
+        brickCrack.reset();
         brickFace = super.getBrickFace();
     }
 }

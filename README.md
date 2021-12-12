@@ -23,6 +23,7 @@ The game has simple commands:
 * Organised classes into packages,
 * Added meaningful javadocs and comments,
 * Model-View-Controller design pattern, 
+* Renamed classes and files for better readability,
 * Used the Maven build tool,
 * Implemented Junit tests,
 * Fixed bugs in methods like the makeSingleTypeLevel method
@@ -34,7 +35,7 @@ The game has simple commands:
 * See live points scored,
 * High score screen that displays after the game ends and ability to set and store high scores,
 * Stopwatch function,
-* Additional playable levels,
-* Background music,
+* Additional playable levels with increased amount of bricks,
+* Background music by using AudioSystem.getAudioInputStream,
 * Inserted background images and gifs,
 * Changed colors of elements to improve user interface

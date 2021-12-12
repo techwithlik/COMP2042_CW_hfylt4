@@ -6,7 +6,7 @@ import java.awt.geom.Point2D;
 
 
 /** Characteristics and features for a crack in a brick */
-public class Crack{
+public class BrickCrack {
 
     private static final double JUMP_PROBABILITY = 0.7;
 
@@ -30,7 +30,7 @@ public class Crack{
      * @param steps Integer value
      * @param brickFace A shape
      */
-    public Crack(int crackDepth, int steps, Shape brickFace){
+    public BrickCrack(int crackDepth, int steps, Shape brickFace){
         crack = new GeneralPath();
         this.crackDepth = crackDepth;
         this.steps = steps;
@@ -156,7 +156,7 @@ public class Crack{
      * @return 0
      */
     private int jumps(int bound){
-        if(Brick.getRnd().nextDouble() > Crack.JUMP_PROBABILITY)
+        if(Brick.getRnd().nextDouble() > BrickCrack.JUMP_PROBABILITY)
             return randomInBounds(bound);
         return 0;
     }

@@ -123,24 +123,24 @@ public class Wall {
                 case Brick.UP_IMPACT -> {
                     ball.reverseY();
                     playerScore+=50;
-                    return b.setImpact(ball.getDown(), Crack.UP);
+                    return b.setImpact(ball.getDown(), BrickCrack.UP);
                 }
                 case Brick.DOWN_IMPACT -> {
                     ball.reverseY();
                     playerScore+=50;
-                    return b.setImpact(ball.getUp(), Crack.DOWN);
+                    return b.setImpact(ball.getUp(), BrickCrack.DOWN);
                 }
 
                 // Horizontal Impact
                 case Brick.LEFT_IMPACT -> {
                     ball.reverseX();
                     playerScore+=50;
-                    return b.setImpact(ball.getRight(), Crack.RIGHT);
+                    return b.setImpact(ball.getRight(), BrickCrack.RIGHT);
                 }
                 case Brick.RIGHT_IMPACT -> {
                     ball.reverseX();
                     playerScore+=50;
-                    return b.setImpact(ball.getLeft(), Crack.LEFT);
+                    return b.setImpact(ball.getLeft(), BrickCrack.LEFT);
                 }
             }
         }

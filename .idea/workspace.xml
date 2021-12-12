@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="MVC design pattern for HomeMenu">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added more Javadocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphicsMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DebugPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DebugPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HomeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HomeMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/AudioPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/AudioPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Crack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/RubberBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RubberBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SteelBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SteelBrick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BrickCrack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DebugConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/HomeMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +92,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.GraphicsMain">
-    <configuration name="GraphicsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphicsMain" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Brick_Destroy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637677624502</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Typecasting of variables">
-      <created>1638029486313</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1638029486313</updated>
     </task>
     <task id="LOCAL-00006" summary="Removed disposable parameters and unused fields">
       <created>1638068902823</created>
@@ -531,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639196337149</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Added more Javadocs">
+      <created>1639216549469</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1639216549499</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Amended Tutorial Screen" />
     <MESSAGE value="Used Maven Build Tool" />
     <MESSAGE value="Introduced a penalty for balls lost" />
     <MESSAGE value="Introduced a new level" />
@@ -572,6 +561,7 @@
     <MESSAGE value="Added more Junit tests" />
     <MESSAGE value="MVC design pattern for GameBoard" />
     <MESSAGE value="MVC design pattern for HomeMenu" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVC design pattern for HomeMenu" />
+    <MESSAGE value="Added more Javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more Javadocs" />
   </component>
 </project>
