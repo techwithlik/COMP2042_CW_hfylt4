@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Added more Javadocs">
+    <list default="true" id="fd4880b3-882f-40de-965e-edc000d7e896" name="Default Changelist" comment="Finalised version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraphicsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/AudioPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/AudioPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/CementBrick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CementBrick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Crack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BrickCrack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Wall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +57,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,7 +84,7 @@
       <recent name="main.view" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GraphicsMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Brick_Destroy" />
@@ -161,7 +154,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GraphicsMain" />
         <item itemvalue="JUnit.DebugConsoleTest" />
         <item itemvalue="JUnit.SteelBrickTest" />
         <item itemvalue="JUnit.WallTest" />
@@ -177,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637677624502</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Removed disposable parameters and unused fields">
-      <created>1638068902823</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1638068902824</updated>
     </task>
     <task id="LOCAL-00007" summary="Separated Crack from Brick class. Edited README">
       <created>1638104794124</created>
@@ -521,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639216549499</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Finalised version">
+      <created>1639276209603</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1639276209603</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +529,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Used Maven Build Tool" />
     <MESSAGE value="Introduced a penalty for balls lost" />
     <MESSAGE value="Introduced a new level" />
     <MESSAGE value="Fixed Skip Level problems" />
@@ -562,6 +553,7 @@
     <MESSAGE value="MVC design pattern for GameBoard" />
     <MESSAGE value="MVC design pattern for HomeMenu" />
     <MESSAGE value="Added more Javadocs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more Javadocs" />
+    <MESSAGE value="Finalised version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalised version" />
   </component>
 </project>
